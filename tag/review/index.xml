@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Review | Giorgio (Erci) Xu</title>
-    <link>https://example.com/tag/review/</link>
-      <atom:link href="https://example.com/tag/review/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://giorgioercixu.github.io/tag/review/</link>
+      <atom:link href="https://giorgioercixu.github.io/tag/review/index.xml" rel="self" type="application/rss+xml" />
     <description>Review</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Review</title>
-      <link>https://example.com/tag/review/</link>
+      <link>https://giorgioercixu.github.io/tag/review/</link>
     </image>
     
     <item>
       <title>Skunk Works Review (Chinese)</title>
-      <link>https://example.com/post/skunk-work/</link>
+      <link>https://giorgioercixu.github.io/post/skunk-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/skunk-work/</guid>
+      <guid>https://giorgioercixu.github.io/post/skunk-work/</guid>
       <description>&lt;p&gt;    《Skunk Works》是洛克希德马丁公司旗下臭鼬工厂第二任掌门Ben Rich的回忆录，其中谈及了U-2（蛟龙夫人）、SR-71（黑鸟）以及F-117A（夜鹰）等职业生涯得意之作，也回忆了许多冷战时期两个阵营较量的历史，例如前苏联将越境侦查的U-2击落并活捉飞行员Francis Powers的冷战著名事件（相关故事在前几年的电影《间谍之桥》中亦有描述）。总的来看，这是一部相当不错的回忆录，不仅在于这些飞机与事件一直以来为人所津津乐道，也是因为作者出色的笔触展现了冷战这个特殊背景下华盛顿众官员、军工企业负责人乃至平头百姓的浮世绘。&lt;/p&gt;
 &lt;h2 id=&#34;skunk-works的中国综合症&#34;&gt;Skunk Works的中国综合症&lt;/h2&gt;
 &lt;p&gt;    中国作为冷战阵营中的一个特殊角色，特别是在中苏十年论战时期和中美建交前夕，对世界格局产生了深远的影响，也间接影响到了Skunk Works的研发与武器部署。例如，在Powers坠机事件后，时任美总统的艾森豪威尔迫于国际舆论压力以及避免更多的U-2被击落，因此放弃了部署U-2越境侦察苏联及东欧国家。但CIA旋即找到台匪部队，成立了所谓黑猫中队开始了对中国，特别是罗布泊地区的常态化侦察。前后历经多年，共出动二百余架次侦照任务。谁料中国人向来聪明，前辈们靠着改进型的SA-2地对空导弹，“捅竹竿”式的把U-2捅下来四五架，让中国成为现今U-2“保有量”第二多的国家。因此，Ben Rich在回顾这段历史中，无不感慨地把标题取成了China Syndrome (即中国综合症）。&lt;/p&gt;
