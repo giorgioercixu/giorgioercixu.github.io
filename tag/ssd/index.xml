@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SSD | Giorgio (Erci) Xu</title>
+    <link>https://example.com/tag/ssd/</link>
+      <atom:link href="https://example.com/tag/ssd/index.xml" rel="self" type="application/rss+xml" />
+    <description>SSD</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 14 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>SSD</title>
+      <link>https://example.com/tag/ssd/</link>
+    </image>
+    
+    <item>
+      <title>Max: A Multicore-Accelerated File System for Flash Storage</title>
+      <link>https://example.com/publication/atc21/</link>
+      <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/atc21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Concordia: Distributed shared memory with in-network cache coherence</title>
+      <link>https://example.com/publication/fast21/</link>
+      <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/fast21/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Write Dependency Disentanglement with HORAE</title>
+      <link>https://example.com/publication/osdi20/</link>
+      <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/osdi20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CoinPurse: A Device-Assisted File System with Dual Interfaces</title>
+      <link>https://example.com/publication/dac20/</link>
+      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/dac20/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lessons and Actions: What We Learned from 10K SSD-Related Storage System Failures</title>
+      <link>https://example.com/publication/atc19/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/atc19/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding SSD Reliability in Large-Scale Cloud Systems</title>
+      <link>https://example.com/publication/sc18/</link>
+      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/sc18/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
