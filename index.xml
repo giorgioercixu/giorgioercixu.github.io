@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Giorgio (Erci) Xu</title>
-    <link>https://example.com/</link>
-      <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://giorgioercixu.github.io/</link>
+      <atom:link href="https://giorgioercixu.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Giorgio (Erci) Xu</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>Giorgio (Erci) Xu</title>
-      <link>https://example.com/</link>
+      <link>https://giorgioercixu.github.io/</link>
     </image>
     
     <item>
       <title>Example Talk</title>
-      <link>https://example.com/talk/example-talk/</link>
+      <link>https://giorgioercixu.github.io/talk/example-talk/</link>
       <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>https://example.com/talk/example-talk/</guid>
+      <guid>https://giorgioercixu.github.io/talk/example-talk/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -34,73 +34,73 @@
     
     <item>
       <title>Max: A Multicore-Accelerated File System for Flash Storage</title>
-      <link>https://example.com/publication/atc21/</link>
+      <link>https://giorgioercixu.github.io/publication/atc21/</link>
       <pubDate>Wed, 14 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/atc21/</guid>
+      <guid>https://giorgioercixu.github.io/publication/atc21/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Challenges and opportunities: an in-depth empirical study on configuration error injection testing</title>
-      <link>https://example.com/publication/issta21/</link>
+      <link>https://giorgioercixu.github.io/publication/issta21/</link>
       <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/issta21/</guid>
+      <guid>https://giorgioercixu.github.io/publication/issta21/</guid>
       <description></description>
     </item>
     
     <item>
       <title>DepOwl: Detecting Dependency Bugs to Prevent Compatibility Failures</title>
-      <link>https://example.com/publication/icse21/</link>
+      <link>https://giorgioercixu.github.io/publication/icse21/</link>
       <pubDate>Fri, 07 May 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/icse21/</guid>
+      <guid>https://giorgioercixu.github.io/publication/icse21/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Concordia: Distributed shared memory with in-network cache coherence</title>
-      <link>https://example.com/publication/fast21/</link>
+      <link>https://giorgioercixu.github.io/publication/fast21/</link>
       <pubDate>Sat, 20 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/fast21/</guid>
+      <guid>https://giorgioercixu.github.io/publication/fast21/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Write Dependency Disentanglement with HORAE</title>
-      <link>https://example.com/publication/osdi20/</link>
+      <link>https://giorgioercixu.github.io/publication/osdi20/</link>
       <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/osdi20/</guid>
+      <guid>https://giorgioercixu.github.io/publication/osdi20/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CP-Detector: Using Configuration-related Performance Properties to Expose Performance Bugs</title>
-      <link>https://example.com/publication/ase20/</link>
+      <link>https://giorgioercixu.github.io/publication/ase20/</link>
       <pubDate>Mon, 21 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/ase20/</guid>
+      <guid>https://giorgioercixu.github.io/publication/ase20/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CoinPurse: A Device-Assisted File System with Dual Interfaces</title>
-      <link>https://example.com/publication/dac20/</link>
+      <link>https://giorgioercixu.github.io/publication/dac20/</link>
       <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/dac20/</guid>
+      <guid>https://giorgioercixu.github.io/publication/dac20/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lessons and Actions: What We Learned from 10K SSD-Related Storage System Failures</title>
-      <link>https://example.com/publication/atc19/</link>
+      <link>https://giorgioercixu.github.io/publication/atc19/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/atc19/</guid>
+      <guid>https://giorgioercixu.github.io/publication/atc19/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Slides</title>
-      <link>https://example.com/slides/example/</link>
+      <link>https://giorgioercixu.github.io/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>https://example.com/slides/example/</guid>
+      <guid>https://giorgioercixu.github.io/slides/example/</guid>
       <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
@@ -227,35 +227,35 @@ Three
     
     <item>
       <title>Understanding SSD Reliability in Large-Scale Cloud Systems</title>
-      <link>https://example.com/publication/sc18/</link>
+      <link>https://giorgioercixu.github.io/publication/sc18/</link>
       <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/sc18/</guid>
+      <guid>https://giorgioercixu.github.io/publication/sc18/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Privacy Policy</title>
-      <link>https://example.com/privacy/</link>
+      <link>https://giorgioercixu.github.io/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://example.com/privacy/</guid>
+      <guid>https://giorgioercixu.github.io/privacy/</guid>
       <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Terms</title>
-      <link>https://example.com/terms/</link>
+      <link>https://giorgioercixu.github.io/terms/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://example.com/terms/</guid>
+      <guid>https://giorgioercixu.github.io/terms/</guid>
       <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Example Project</title>
-      <link>https://example.com/project/example/</link>
+      <link>https://giorgioercixu.github.io/project/example/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/example/</guid>
+      <guid>https://giorgioercixu.github.io/project/example/</guid>
       <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
 &lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
 &lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
@@ -266,17 +266,17 @@ Three
     
     <item>
       <title></title>
-      <link>https://example.com/admin/config.yml</link>
+      <link>https://giorgioercixu.github.io/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/admin/config.yml</guid>
+      <guid>https://giorgioercixu.github.io/admin/config.yml</guid>
       <description></description>
     </item>
     
     <item>
       <title>Skunk Works Review (Chinese)</title>
-      <link>https://example.com/post/skunk-work/</link>
+      <link>https://giorgioercixu.github.io/post/skunk-work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/post/skunk-work/</guid>
+      <guid>https://giorgioercixu.github.io/post/skunk-work/</guid>
       <description>&lt;p&gt;    《Skunk Works》是洛克希德马丁公司旗下臭鼬工厂第二任掌门Ben Rich的回忆录，其中谈及了U-2（蛟龙夫人）、SR-71（黑鸟）以及F-117A（夜鹰）等职业生涯得意之作，也回忆了许多冷战时期两个阵营较量的历史，例如前苏联将越境侦查的U-2击落并活捉飞行员Francis Powers的冷战著名事件（相关故事在前几年的电影《间谍之桥》中亦有描述）。总的来看，这是一部相当不错的回忆录，不仅在于这些飞机与事件一直以来为人所津津乐道，也是因为作者出色的笔触展现了冷战这个特殊背景下华盛顿众官员、军工企业负责人乃至平头百姓的浮世绘。&lt;/p&gt;
 &lt;h2 id=&#34;skunk-works的中国综合症&#34;&gt;Skunk Works的中国综合症&lt;/h2&gt;
 &lt;p&gt;    中国作为冷战阵营中的一个特殊角色，特别是在中苏十年论战时期和中美建交前夕，对世界格局产生了深远的影响，也间接影响到了Skunk Works的研发与武器部署。例如，在Powers坠机事件后，时任美总统的艾森豪威尔迫于国际舆论压力以及避免更多的U-2被击落，因此放弃了部署U-2越境侦察苏联及东欧国家。但CIA旋即找到台匪部队，成立了所谓黑猫中队开始了对中国，特别是罗布泊地区的常态化侦察。前后历经多年，共出动二百余架次侦照任务。谁料中国人向来聪明，前辈们靠着改进型的SA-2地对空导弹，“捅竹竿”式的把U-2捅下来四五架，让中国成为现今U-2“保有量”第二多的国家。因此，Ben Rich在回顾这段历史中，无不感慨地把标题取成了China Syndrome (即中国综合症）。&lt;/p&gt;
