@@ -33,6 +33,22 @@
     </item>
     
     <item>
+      <title>NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</title>
+      <link>https://giorgioercixu.github.io/publication/atc22/</link>
+      <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/atc22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>imDedup: A Lossless Deduplication Scheme to Eliminate Fine-grained Redundancy among Images</title>
+      <link>https://giorgioercixu.github.io/publication/icde22/</link>
+      <pubDate>Thu, 20 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/icde22/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Skunk Works Review (Chinese)</title>
       <link>https://giorgioercixu.github.io/post/skunk-work/</link>
       <pubDate>Thu, 07 Oct 2021 00:00:00 +0000</pubDate>
@@ -169,15 +185,15 @@ $$&lt;/p&gt;
 {{% fragment %}} Three {{% /fragment %}}
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
-&lt;p&gt;&lt;span class=&#34;fragment &#34; &gt;
-One
+&lt;span class=&#34;fragment &#34; &gt;
+   One 
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-&lt;strong&gt;Two&lt;/strong&gt;
+   **Two** 
 &lt;/span&gt;
 &lt;span class=&#34;fragment &#34; &gt;
-Three
-&lt;/span&gt;&lt;/p&gt;
+   Three 
+&lt;/span&gt;
 &lt;hr&gt;
 &lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
 &lt;ul&gt;
@@ -253,6 +269,24 @@ Three
       <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
       <guid>https://giorgioercixu.github.io/publication/sc18/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://giorgioercixu.github.io/privacy/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://giorgioercixu.github.io/privacy/</guid>
+      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Terms</title>
+      <link>https://giorgioercixu.github.io/terms/</link>
+      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
+      <guid>https://giorgioercixu.github.io/terms/</guid>
+      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
+</description>
     </item>
     
     <item>

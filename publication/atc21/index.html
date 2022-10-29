@@ -30,7 +30,7 @@
   
     
   
-  <meta name="description" content="Block I/O serves as a classic interface for accessing storage devices with portability. But it can also cause extra overhead by enforcing transferring data in the unit of blocks. In this paper, we present CoinPurse, a device-assisted file system with dual interfaces. By leveraging non-volatile memory (NVM) in SSD, CoinPurse manages to adaptively persist writes through both the block I/O and a byte-addressable partial update interface. In addition, we also develop a set of techniques to overcome hardware limitations and resolve possible consistency conflicts. Evaluation shows that CoinPurse outperforms F2FS, a popular flash-optimized file system, by up to 33.2%." />
+  <meta name="description" content="The bandwidth of flash storage has been surging in recent years. Employing multicores to fully unleash its abundant bandwidth becomes a necessary step towards building high performance storage systems. This paper presents the design and implementation of Max, a multicore-friendly log-structured file system (LFS) for flash storage. With three main techniques, Max systematically improves the scalability of LFS while retaining the flash-friendly design. First, we propose a new reader-writer semaphore to scale the user I/Os with negligible impact on the internal operations of LFS. Second, we introduce file cell to scale the access to in-memory index and cache while delivering concurrency- and flash-friendly on-disk layout. Third, to fully exploit the flash parallelism, we advance the single log design with runtime-independent log partitions, and delay the ordering and consistency guarantees to crash recovery. We implement Max based on the F2FS in the Linux kernel. Evaluations show that Max significantly improves scalability, and achieves an order of magnitude higher throughput than existing Linux file systems." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/publication/atc21/" />
@@ -295,7 +295,7 @@
   <meta property="og:site_name" content="Giorgio (Erci) Xu" />
   <meta property="og:url" content="https://giorgioercixu.github.io/publication/atc21/" />
   <meta property="og:title" content="Max: A Multicore-Accelerated File System for Flash Storage | Giorgio (Erci) Xu" />
-  <meta property="og:description" content="Block I/O serves as a classic interface for accessing storage devices with portability. But it can also cause extra overhead by enforcing transferring data in the unit of blocks. In this paper, we present CoinPurse, a device-assisted file system with dual interfaces. By leveraging non-volatile memory (NVM) in SSD, CoinPurse manages to adaptively persist writes through both the block I/O and a byte-addressable partial update interface. In addition, we also develop a set of techniques to overcome hardware limitations and resolve possible consistency conflicts. Evaluation shows that CoinPurse outperforms F2FS, a popular flash-optimized file system, by up to 33.2%." /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:description" content="The bandwidth of flash storage has been surging in recent years. Employing multicores to fully unleash its abundant bandwidth becomes a necessary step towards building high performance storage systems. This paper presents the design and implementation of Max, a multicore-friendly log-structured file system (LFS) for flash storage. With three main techniques, Max systematically improves the scalability of LFS while retaining the flash-friendly design. First, we propose a new reader-writer semaphore to scale the user I/Os with negligible impact on the internal operations of LFS. Second, we introduce file cell to scale the access to in-memory index and cache while delivering concurrency- and flash-friendly on-disk layout. Third, to fully exploit the flash parallelism, we advance the single log design with runtime-independent log partitions, and delay the ordering and consistency guarantees to crash recovery. We implement Max based on the F2FS in the Linux kernel. Evaluations show that Max significantly improves scalability, and achieves an order of magnitude higher throughput than existing Linux file systems." /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -346,7 +346,7 @@
       "url": "https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Block I/O serves as a classic interface for accessing storage devices with portability. But it can also cause extra overhead by enforcing transferring data in the unit of blocks. In this paper, we present CoinPurse, a device-assisted file system with dual interfaces. By leveraging non-volatile memory (NVM) in SSD, CoinPurse manages to adaptively persist writes through both the block I/O and a byte-addressable partial update interface. In addition, we also develop a set of techniques to overcome hardware limitations and resolve possible consistency conflicts. Evaluation shows that CoinPurse outperforms F2FS, a popular flash-optimized file system, by up to 33.2%."
+  "description": "The bandwidth of flash storage has been surging in recent years. Employing multicores to fully unleash its abundant bandwidth becomes a necessary step towards building high performance storage systems. This paper presents the design and implementation of Max, a multicore-friendly log-structured file system (LFS) for flash storage. With three main techniques, Max systematically improves the scalability of LFS while retaining the flash-friendly design. First, we propose a new reader-writer semaphore to scale the user I/Os with negligible impact on the internal operations of LFS. Second, we introduce file cell to scale the access to in-memory index and cache while delivering concurrency- and flash-friendly on-disk layout. Third, to fully exploit the flash parallelism, we advance the single log design with runtime-independent log partitions, and delay the ordering and consistency guarantees to crash recovery. We implement Max based on the F2FS in the Linux kernel. Evaluations show that Max significantly improves scalability, and achieves an order of magnitude higher throughput than existing Linux file systems."
 }
 </script>
 
@@ -377,7 +377,7 @@
   
   
   
-  <script src="/js/wowchemy-init.min.8988fb2a4bba758785868cfcb5244555.js"></script>
+  <script src="/js/wowchemy-init.min.1d309c6b3f55725f8869af2651084961.js"></script>
 
   
 
@@ -786,7 +786,23 @@
 
 
 
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://www.usenix.org/system/files/atc21_slides_liao_0.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
 
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://youtu.be/F6-0rFGHPSI" target="_blank" rel="noopener">
+  Video
+</a>
 
 
 
@@ -804,7 +820,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Block I/O serves as a classic interface for accessing storage devices with portability. But it can also cause extra overhead by enforcing transferring data in the unit of blocks. In this paper, we present CoinPurse, a device-assisted file system with dual interfaces. By leveraging non-volatile memory (NVM) in SSD, CoinPurse manages to adaptively persist writes through both the block I/O and a byte-addressable partial update interface. In addition, we also develop a set of techniques to overcome hardware limitations and resolve possible consistency conflicts. Evaluation shows that CoinPurse outperforms F2FS, a popular flash-optimized file system, by up to 33.2%.</p>
+    <p class="pub-abstract">The bandwidth of flash storage has been surging in recent years. Employing multicores to fully unleash its abundant bandwidth becomes a necessary step towards building high performance storage systems. This paper presents the design and implementation of Max, a multicore-friendly log-structured file system (LFS) for flash storage. With three main techniques, Max systematically improves the scalability of LFS while retaining the flash-friendly design. First, we propose a new reader-writer semaphore to scale the user I/Os with negligible impact on the internal operations of LFS. Second, we introduce file cell to scale the access to in-memory index and cache while delivering concurrency- and flash-friendly on-disk layout. Third, to fully exploit the flash parallelism, we advance the single log design with runtime-independent log partitions, and delay the ordering and consistency guarantees to crash recovery. We implement Max based on the F2FS in the Linux kernel. Evaluations show that Max significantly improves scalability, and achieves an order of magnitude higher throughput than existing Linux file systems.</p>
     
 
     
@@ -1005,13 +1021,13 @@
       
       <li><a href="/publication/fast21/">Concordia: Distributed shared memory with in-network cache coherence</a></li>
       
+      <li><a href="/publication/atc22/">NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</a></li>
+      
       <li><a href="/publication/osdi20/">Write Dependency Disentanglement with HORAE</a></li>
       
       <li><a href="/publication/dac20/">CoinPurse: A Device-Assisted File System with Dual Interfaces</a></li>
       
       <li><a href="/publication/atc19/">Lessons and Actions: What We Learned from 10K SSD-Related Storage System Failures</a></li>
-      
-      <li><a href="/publication/sc18/">Understanding SSD Reliability in Large-Scale Cloud Systems</a></li>
       
     </ul>
   </div>
@@ -1037,6 +1053,16 @@
 
   
 
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
   
 
   
@@ -1097,7 +1123,7 @@
       
 
     
-    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+    <script src="/js/vendor-bundle.min.9592335d574f7a97010f99b90ad0f310.js"></script>
 
     
     
@@ -1183,7 +1209,7 @@
       
     
     
-    <script src="/en/js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script>
+    <script src="/en/js/wowchemy.min.2cc80485e7b9001edba5cdf5b39a1f97.js"></script>
 
     
 
