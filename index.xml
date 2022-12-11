@@ -33,6 +33,30 @@
     </item>
     
     <item>
+      <title>Understanding and Detecting On-the-Fly Configuration Bugs (to appear)</title>
+      <link>https://giorgioercixu.github.io/publication/icse23/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/icse23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems (to appear)</title>
+      <link>https://giorgioercixu.github.io/publication/fast23-1/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/fast23-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives (to appear)</title>
+      <link>https://giorgioercixu.github.io/publication/fast23-2/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/fast23-2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</title>
       <link>https://giorgioercixu.github.io/publication/atc22/</link>
       <pubDate>Wed, 20 Jul 2022 00:00:00 +0000</pubDate>
@@ -269,24 +293,6 @@ $$&lt;/p&gt;
       <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
       <guid>https://giorgioercixu.github.io/publication/sc18/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>https://giorgioercixu.github.io/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://giorgioercixu.github.io/privacy/</guid>
-      <description>&lt;p&gt;Add your privacy policy here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>https://giorgioercixu.github.io/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>https://giorgioercixu.github.io/terms/</guid>
-      <description>&lt;p&gt;Add your terms here and set &lt;code&gt;draft: false&lt;/code&gt; to publish it. Otherwise, delete this file if you don&amp;rsquo;t need it.&lt;/p&gt;
-</description>
     </item>
     
     <item>

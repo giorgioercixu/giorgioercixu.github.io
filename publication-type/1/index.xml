@@ -5,12 +5,36 @@
     <link>https://giorgioercixu.github.io/publication-type/1/</link>
       <atom:link href="https://giorgioercixu.github.io/publication-type/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 20 Jul 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 07 May 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>1</title>
       <link>https://giorgioercixu.github.io/publication-type/1/</link>
     </image>
+    
+    <item>
+      <title>Understanding and Detecting On-the-Fly Configuration Bugs (to appear)</title>
+      <link>https://giorgioercixu.github.io/publication/icse23/</link>
+      <pubDate>Sun, 07 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/icse23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems (to appear)</title>
+      <link>https://giorgioercixu.github.io/publication/fast23-1/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/fast23-1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives (to appear)</title>
+      <link>https://giorgioercixu.github.io/publication/fast23-2/</link>
+      <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/fast23-2/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</title>
