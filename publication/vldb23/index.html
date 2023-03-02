@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Block I/O serves as a classic interface for accessing storage devices with portability. But it can also cause extra overhead by enforcing transferring data in the unit of blocks. In this paper, we present CoinPurse, a device-assisted file system with dual interfaces. By leveraging non-volatile memory (NVM) in SSD, CoinPurse manages to adaptively persist writes through both the block I/O and a byte-addressable partial update interface. In addition, we also develop a set of techniques to overcome hardware limitations and resolve possible consistency conflicts. Evaluation shows that CoinPurse outperforms F2FS, a popular flash-optimized file system, by up to 33.2%." />
+  <meta name="description" content="NVMe SSD hugely boosts the I/O speed, with up to GB/s throughput and microsecond-level latency. Unfortunately, DBMS users can often find their high-performanced storage devices tend to deliver less-than-expected or even worse performance when compared to their traditional peers. While many works focus on proposing new DBMS designs to fully exploit NVMe SSDs, few systematically study the symptoms, root causes and possible detection methods of such performance mismatches on existing databases. In this paper, we start with an empirical study where we systematically expose and analyze the performance mismatches on six popular databases via controlled configuration tuning. From the study, we find that all six databases can suffer from performance mismatches. Moreover, we conclude that the root causes can be categorized as databases’ unawareness of new storage devices characteristics in I/O size, I/O parallelism and I/O sequentiality. We report 17 mismatches to developers and 15 are confirmed. Additionally, we realize testing all configuration knobs yields low efficiency. Therefore, we propose a fast performance mismatch detection framework and evaluation shows that our framework brings two orders of magnitude speedup than baseline without sacrificing effectiveness." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/publication/dac20/" />
+  <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/publication/vldb23/" />
 
   
 
@@ -276,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://giorgioercixu.github.io/publication/dac20/" />
+  <link rel="canonical" href="https://giorgioercixu.github.io/publication/vldb23/" />
 
   
   
@@ -293,9 +293,9 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Giorgio (Erci) Xu" />
-  <meta property="og:url" content="https://giorgioercixu.github.io/publication/dac20/" />
-  <meta property="og:title" content="CoinPurse: A Device-Assisted File System with Dual Interfaces | Giorgio (Erci) Xu" />
-  <meta property="og:description" content="Block I/O serves as a classic interface for accessing storage devices with portability. But it can also cause extra overhead by enforcing transferring data in the unit of blocks. In this paper, we present CoinPurse, a device-assisted file system with dual interfaces. By leveraging non-volatile memory (NVM) in SSD, CoinPurse manages to adaptively persist writes through both the block I/O and a byte-addressable partial update interface. In addition, we also develop a set of techniques to overcome hardware limitations and resolve possible consistency conflicts. Evaluation shows that CoinPurse outperforms F2FS, a popular flash-optimized file system, by up to 33.2%." /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://giorgioercixu.github.io/publication/vldb23/" />
+  <meta property="og:title" content="When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations (to appear) | Giorgio (Erci) Xu" />
+  <meta property="og:description" content="NVMe SSD hugely boosts the I/O speed, with up to GB/s throughput and microsecond-level latency. Unfortunately, DBMS users can often find their high-performanced storage devices tend to deliver less-than-expected or even worse performance when compared to their traditional peers. While many works focus on proposing new DBMS designs to fully exploit NVMe SSDs, few systematically study the symptoms, root causes and possible detection methods of such performance mismatches on existing databases. In this paper, we start with an empirical study where we systematically expose and analyze the performance mismatches on six popular databases via controlled configuration tuning. From the study, we find that all six databases can suffer from performance mismatches. Moreover, we conclude that the root causes can be categorized as databases’ unawareness of new storage devices characteristics in I/O size, I/O parallelism and I/O sequentiality. We report 17 mismatches to developers and 15 are confirmed. Additionally, we realize testing all configuration knobs yields low efficiency. Therefore, we propose a fast performance mismatch detection framework and evaluation shows that our framework brings two orders of magnitude speedup than baseline without sacrificing effectiveness." /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -304,7 +304,7 @@
         content="2020-07-20T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2020-07-20T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2023-04-20T00:00:00&#43;00:00">
   
 
   
@@ -326,16 +326,16 @@
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://giorgioercixu.github.io/publication/dac20/"
+    "@id": "https://giorgioercixu.github.io/publication/vldb23/"
   },
-  "headline": "CoinPurse: A Device-Assisted File System with Dual Interfaces",
+  "headline": "When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations (to appear)",
   
   "datePublished": "2020-07-20T00:00:00Z",
-  "dateModified": "2020-07-20T00:00:00Z",
+  "dateModified": "2023-04-20T00:00:00Z",
   
   "author": {
     "@type": "Person",
-    "name": "Zhe Yang"
+    "name": "Haochen He"
   },
   
   "publisher": {
@@ -346,7 +346,7 @@
       "url": "https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Block I/O serves as a classic interface for accessing storage devices with portability. But it can also cause extra overhead by enforcing transferring data in the unit of blocks. In this paper, we present CoinPurse, a device-assisted file system with dual interfaces. By leveraging non-volatile memory (NVM) in SSD, CoinPurse manages to adaptively persist writes through both the block I/O and a byte-addressable partial update interface. In addition, we also develop a set of techniques to overcome hardware limitations and resolve possible consistency conflicts. Evaluation shows that CoinPurse outperforms F2FS, a popular flash-optimized file system, by up to 33.2%."
+  "description": "NVMe SSD hugely boosts the I/O speed, with up to GB/s throughput and microsecond-level latency. Unfortunately, DBMS users can often find their high-performanced storage devices tend to deliver less-than-expected or even worse performance when compared to their traditional peers. While many works focus on proposing new DBMS designs to fully exploit NVMe SSDs, few systematically study the symptoms, root causes and possible detection methods of such performance mismatches on existing databases. In this paper, we start with an empirical study where we systematically expose and analyze the performance mismatches on six popular databases via controlled configuration tuning. From the study, we find that all six databases can suffer from performance mismatches. Moreover, we conclude that the root causes can be categorized as databases’ unawareness of new storage devices characteristics in I/O size, I/O parallelism and I/O sequentiality. We report 17 mismatches to developers and 15 are confirmed. Additionally, we realize testing all configuration knobs yields low efficiency. Therefore, we propose a fast performance mismatch detection framework and evaluation shows that our framework brings two orders of magnitude speedup than baseline without sacrificing effectiveness."
 }
 </script>
 
@@ -362,11 +362,11 @@
 
 
 
-  <title>CoinPurse: A Device-Assisted File System with Dual Interfaces | Giorgio (Erci) Xu</title>
+  <title>When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations (to appear) | Giorgio (Erci) Xu</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="1244d289bd01b527b63529254e5f8d1d" >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="e093da05f2f4f45980ee6bc023b2a3ed" >
 
   
   
@@ -695,7 +695,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>CoinPurse: A Device-Assisted File System with Dual Interfaces</h1>
+  <h1>When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations (to appear)</h1>
 
   
 
@@ -713,10 +713,14 @@
     
 
   <span >
-      Zhe Yang</span>, <span >
-      Youyou Lu</span>, <span >
+      Haochen He</span>, <span >
       Erci Xu</span>, <span >
-      Jiwu Shu</span>
+      Shanshan Li</span>, <span >
+      Zhouyang Jia</span>, <span >
+      Si Zheng</span>, <span >
+      Yue Yu</span>, <span >
+      Jun Ma</span>, <span >
+      Xiangke Liao</span>
   </div>
   
   
@@ -727,7 +731,7 @@
     
       
     
-    July 2020
+    April 2023
   </span>
   
 
@@ -752,48 +756,6 @@
 
 
 
-<div class="btn-links mb-3">
-  
-  
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header" href="/publication/dac20/DAC20.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header js-cite-modal"
-        data-filename="/publication/dac20/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-
 
   
 </div>
@@ -804,7 +766,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Block I/O serves as a classic interface for accessing storage devices with portability. But it can also cause extra overhead by enforcing transferring data in the unit of blocks. In this paper, we present CoinPurse, a device-assisted file system with dual interfaces. By leveraging non-volatile memory (NVM) in SSD, CoinPurse manages to adaptively persist writes through both the block I/O and a byte-addressable partial update interface. In addition, we also develop a set of techniques to overcome hardware limitations and resolve possible consistency conflicts. Evaluation shows that CoinPurse outperforms F2FS, a popular flash-optimized file system, by up to 33.2%.</p>
+    <p class="pub-abstract">NVMe SSD hugely boosts the I/O speed, with up to GB/s throughput and microsecond-level latency. Unfortunately, DBMS users can often find their high-performanced storage devices tend to deliver less-than-expected or even worse performance when compared to their traditional peers. While many works focus on proposing new DBMS designs to fully exploit NVMe SSDs, few systematically study the symptoms, root causes and possible detection methods of such performance mismatches on existing databases. In this paper, we start with an empirical study where we systematically expose and analyze the performance mismatches on six popular databases via controlled configuration tuning. From the study, we find that all six databases can suffer from performance mismatches. Moreover, we conclude that the root causes can be categorized as databases’ unawareness of new storage devices characteristics in I/O size, I/O parallelism and I/O sequentiality. We report 17 mismatches to developers and 15 are confirmed. Additionally, we realize testing all configuration knobs yields low efficiency. Therefore, we propose a fast performance mismatch detection framework and evaluation shows that our framework brings two orders of magnitude speedup than baseline without sacrificing effectiveness.</p>
     
 
     
@@ -832,7 +794,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">2020 57th ACM/IEEE Design Automation Conference (DAC)</div>
+          <div class="col-12 col-md-9">VLDB 2023 (Vol. 16)</div>
         </div>
       </div>
       <div class="col-md-1"></div>
@@ -855,6 +817,8 @@
   
   <a class="badge badge-light" href="/tag/ssd/">SSD</a>
   
+  <a class="badge badge-light" href="/tag/nvm/">NVM</a>
+  
   <a class="badge badge-light" href="/tag/storage/">storage</a>
   
 </div>
@@ -872,7 +836,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://giorgioercixu.github.io/publication/dac20/&amp;text=CoinPurse:%20A%20Device-Assisted%20File%20System%20with%20Dual%20Interfaces" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://giorgioercixu.github.io/publication/vldb23/&amp;text=When%20Database%20Meets%20New%20Storage%20Devices:%20Understanding%20and%20Exposing%20Performance%20Mismatches%20via%20Configurations%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -885,7 +849,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://giorgioercixu.github.io/publication/dac20/&amp;t=CoinPurse:%20A%20Device-Assisted%20File%20System%20with%20Dual%20Interfaces" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://giorgioercixu.github.io/publication/vldb23/&amp;t=When%20Database%20Meets%20New%20Storage%20Devices:%20Understanding%20and%20Exposing%20Performance%20Mismatches%20via%20Configurations%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -898,7 +862,7 @@
       
       
       <li>
-        <a href="mailto:?subject=CoinPurse:%20A%20Device-Assisted%20File%20System%20with%20Dual%20Interfaces&amp;body=https://giorgioercixu.github.io/publication/dac20/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=When%20Database%20Meets%20New%20Storage%20Devices:%20Understanding%20and%20Exposing%20Performance%20Mismatches%20via%20Configurations%20%28to%20appear%29&amp;body=https://giorgioercixu.github.io/publication/vldb23/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -911,7 +875,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://giorgioercixu.github.io/publication/dac20/&amp;title=CoinPurse:%20A%20Device-Assisted%20File%20System%20with%20Dual%20Interfaces" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://giorgioercixu.github.io/publication/vldb23/&amp;title=When%20Database%20Meets%20New%20Storage%20Devices:%20Understanding%20and%20Exposing%20Performance%20Mismatches%20via%20Configurations%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -924,7 +888,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=CoinPurse:%20A%20Device-Assisted%20File%20System%20with%20Dual%20Interfaces%20https://giorgioercixu.github.io/publication/dac20/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=When%20Database%20Meets%20New%20Storage%20Devices:%20Understanding%20and%20Exposing%20Performance%20Mismatches%20via%20Configurations%20%28to%20appear%29%20https://giorgioercixu.github.io/publication/vldb23/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -937,7 +901,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://giorgioercixu.github.io/publication/dac20/&amp;title=CoinPurse:%20A%20Device-Assisted%20File%20System%20with%20Dual%20Interfaces" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://giorgioercixu.github.io/publication/vldb23/&amp;title=When%20Database%20Meets%20New%20Storage%20Devices:%20Understanding%20and%20Exposing%20Performance%20Mismatches%20via%20Configurations%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -956,6 +920,30 @@
 
 
   
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
   
     
 
@@ -1001,15 +989,15 @@
     <h3>Related</h3>
     <ul>
       
-      <li><a href="/publication/atc22/">NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</a></li>
-      
       <li><a href="/publication/atc21/">Max: A Multicore-Accelerated File System for Flash Storage</a></li>
-      
-      <li><a href="/publication/osdi20/">Write Dependency Disentanglement with HORAE</a></li>
       
       <li><a href="/publication/fast21/">Concordia: Distributed shared memory with in-network cache coherence</a></li>
       
       <li><a href="/publication/fast23-1/">Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems (awarded Best Paper)</a></li>
+      
+      <li><a href="/publication/atc22/">NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</a></li>
+      
+      <li><a href="/publication/osdi20/">Write Dependency Disentanglement with HORAE</a></li>
       
     </ul>
   </div>

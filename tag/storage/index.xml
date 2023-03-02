@@ -5,7 +5,7 @@
     <link>https://giorgioercixu.github.io/tag/storage/</link>
       <atom:link href="https://giorgioercixu.github.io/tag/storage/index.xml" rel="self" type="application/rss+xml" />
     <description>storage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 20 Feb 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>storage</title>
@@ -13,7 +13,15 @@
     </image>
     
     <item>
-      <title>Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems (to appear)</title>
+      <title>When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations (to appear)</title>
+      <link>https://giorgioercixu.github.io/publication/vldb23/</link>
+      <pubDate>Thu, 20 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/vldb23/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems (awarded Best Paper)</title>
       <link>https://giorgioercixu.github.io/publication/fast23-1/</link>
       <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://giorgioercixu.github.io/publication/fast23-1/</guid>
@@ -21,7 +29,7 @@
     </item>
     
     <item>
-      <title>SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives (to appear)</title>
+      <title>SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives</title>
       <link>https://giorgioercixu.github.io/publication/fast23-2/</link>
       <pubDate>Mon, 20 Feb 2023 00:00:00 +0000</pubDate>
       <guid>https://giorgioercixu.github.io/publication/fast23-2/</guid>
@@ -81,14 +89,6 @@
       <link>https://giorgioercixu.github.io/publication/atc19/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       <guid>https://giorgioercixu.github.io/publication/atc19/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Understanding SSD Reliability in Large-Scale Cloud Systems</title>
-      <link>https://giorgioercixu.github.io/publication/sc18/</link>
-      <pubDate>Sun, 18 Nov 2018 00:00:00 +0000</pubDate>
-      <guid>https://giorgioercixu.github.io/publication/sc18/</guid>
       <description></description>
     </item>
     
