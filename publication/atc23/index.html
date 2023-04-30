@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Storage Researcher" />
+  <meta name="description" content="The TCP protocol remains to be the main workhorse in today’s large-scale data centers. However, the increasingly demanding performance expectations—led by the advancements in hardware (e.g., 25 to 100Gbps link speed) and software (e.g., Intel DPDK support)—make the kernel-based TCP stack no longer a favorable option. Over the past decade, multiple parties have proposed various user-stack TCP stacks where they offer the things-as-usual TCP support but with significant performance improvement. Unfortunately, we find these proposals may not work well in the field, especially in large-scale deployments. In this paper, we present Luna, a user-space TCP stack that has been successfully serving nearly 1 million nodes in the Aliyun cloud for the last five years. We discuss our lessons on the design tradeoffs with an emphasis on three unique features in thread, memory, and traffic models. The extensive microbenchmark evaluations and performance statistics collected from the field demonstrate that Luna can outperform kernel and other user-space TCP stacks with up to 3.5X in throughput and reduce up to 53% latency." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/tag/smr/" />
+  <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/publication/atc23/" />
 
   
 
@@ -268,8 +268,6 @@
   
 
   
-    <link rel="alternate" href="/tag/smr/index.xml" type="application/rss+xml" title="Giorgio (Erci) Xu" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -278,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://giorgioercixu.github.io/tag/smr/" />
+  <link rel="canonical" href="https://giorgioercixu.github.io/publication/atc23/" />
 
   
   
@@ -295,33 +293,80 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Giorgio (Erci) Xu" />
-  <meta property="og:url" content="https://giorgioercixu.github.io/tag/smr/" />
-  <meta property="og:title" content="SMR | Giorgio (Erci) Xu" />
-  <meta property="og:description" content="Storage Researcher" /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://giorgioercixu.github.io/publication/atc23/" />
+  <meta property="og:title" content="Deploying User-space TCP at Cloud Scale: Three Easy Pieces (to appear) | Giorgio (Erci) Xu" />
+  <meta property="og:description" content="The TCP protocol remains to be the main workhorse in today’s large-scale data centers. However, the increasingly demanding performance expectations—led by the advancements in hardware (e.g., 25 to 100Gbps link speed) and software (e.g., Intel DPDK support)—make the kernel-based TCP stack no longer a favorable option. Over the past decade, multiple parties have proposed various user-stack TCP stacks where they offer the things-as-usual TCP support but with significant performance improvement. Unfortunately, we find these proposals may not work well in the field, especially in large-scale deployments. In this paper, we present Luna, a user-space TCP stack that has been successfully serving nearly 1 million nodes in the Aliyun cloud for the last five years. We discuss our lessons on the design tradeoffs with an emphasis on three unique features in thread, memory, and traffic models. The extensive microbenchmark evaluations and performance statistics collected from the field demonstrate that Luna can outperform kernel and other user-space TCP stacks with up to 3.5X in throughput and reduce up to 53% latency." /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2023-02-20T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2023-04-20T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2023-07-20T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://giorgioercixu.github.io/publication/atc23/"
+  },
+  "headline": "Deploying User-space TCP at Cloud Scale: Three Easy Pieces (to appear)",
+  
+  "datePublished": "2023-04-20T00:00:00Z",
+  "dateModified": "2023-07-20T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Lingjun Zhu"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Giorgio (Erci) Xu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "The TCP protocol remains to be the main workhorse in today’s large-scale data centers. However, the increasingly demanding performance expectations—led by the advancements in hardware (e.g., 25 to 100Gbps link speed) and software (e.g., Intel DPDK support)—make the kernel-based TCP stack no longer a favorable option. Over the past decade, multiple parties have proposed various user-stack TCP stacks where they offer the things-as-usual TCP support but with significant performance improvement. Unfortunately, we find these proposals may not work well in the field, especially in large-scale deployments. In this paper, we present Luna, a user-space TCP stack that has been successfully serving nearly 1 million nodes in the Aliyun cloud for the last five years. We discuss our lessons on the design tradeoffs with an emphasis on three unique features in thread, memory, and traffic models. The extensive microbenchmark evaluations and performance statistics collected from the field demonstrate that Luna can outperform kernel and other user-space TCP stacks with up to 3.5X in throughput and reduce up to 53% latency."
+}
+</script>
+
+  
+
+  
+
   
 
   
 
 
 
-  
-
-  
 
 
-
-
-
-  <title>SMR | Giorgio (Erci) Xu</title>
+  <title>Deploying User-space TCP at Cloud Scale: Three Easy Pieces (to appear) | Giorgio (Erci) Xu</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="eb2e79ba7361b189e9f2ae5f9f500896" >
 
   
   
@@ -629,6 +674,17 @@
 
 
 
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -637,152 +693,384 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1>Deploying User-space TCP at Cloud Scale: Three Easy Pieces (to appear)</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>SMR</h1>
-
-  
-
-  
-</div>
 
 
-
-<div class="universal-wrapper">
-  
+<div class="article-metadata">
 
   
   
+  
+  
+  <div>
     
-      
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-  
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/publication/fast23-2/" >SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives</a>
-    </div>
-
-    
-    <a href="/publication/fast23-2/"  class="summary-link">
-      <div class="article-style">
-        <p>Cloud object storage vendors are in the forever pursuit of better cost efficiency. The emerging Shingled Magnetic Recording (SMR) drive …</p>
-      </div>
-    </a>
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-      <div>
-        
 
   <span >
-      Su Zhou</span>, <span >
+      Lingjun Zhu</span>, <span >
+      Yifan Shen</span>, <span >
       Erci Xu (Corresponding)</span>, <span >
-      Hao Wu</span>, <span >
-      Yu Du</span>, <span >
-      Jiacheng Cui</span>, <span >
-      Wanyu Fu</span>, <span >
-      Chang Liu</span>, <span >
-      Yingni Wang</span>, <span >
-      Wenbo Wang</span>, <span >
-      Shouqu Sun</span>, <span >
-      Xianfei Wang</span>, <span >
-      Bo Feng</span>, <span >
-      Biyun Zhu</span>, <span >
-      Xin Tong</span>, <span >
-      Weikang Kong</span>, <span >
-      Linyan Liu</span>, <span >
-      Zhongjie Wu</span>, <span >
-      Jinbo Wu</span>, <span >
-      Qingchao Luo</span>, <span >
+      Bo Shi</span>, <span >
+      Ting Fu</span>, <span >
+      Shu Ma</span>, <span >
+      Shuguang Chen</span>, <span >
+      Zhongyu Wang</span>, <span >
+      Hoanan Wu</span>, <span >
+      Zhendan Yang</span>, <span >
+      Xingyu Liao</span>, <span >
+      Wei Lin</span>, <span >
+      Yijun Hou</span>, <span >
+      Rong Liu</span>, <span >
+      Chao Shi</span>, <span >
+      Jiaji Zhu</span>, <span >
       Jiesheng Wu</span>
-      </div>
-      
-    </div>
-
-    
-    <div class="btn-links">
-      
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/system/files/fast23-zhou-su.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=b_iW94OQmbY" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-
-    </div>
-    
-
   </div>
-  <div class="ml-3">
+  
+  
+
+  
+  <span class="article-date">
     
     
-  </div>
+      
+    
+    July 2023
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
 </div>
 
     
+
+
+
+
+
   
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">The TCP protocol remains to be the main workhorse in today’s large-scale data centers. However, the increasingly demanding performance expectations—led by the advancements in hardware (e.g., 25 to 100Gbps link speed) and software (e.g., Intel DPDK support)—make the kernel-based TCP stack no longer a favorable option. Over the past decade, multiple parties have proposed various user-stack TCP stacks where they offer the things-as-usual TCP support but with significant performance improvement. Unfortunately, we find these proposals may not work well in the field, especially in large-scale deployments. In this paper, we present Luna, a user-space TCP stack that has been successfully serving nearly 1 million nodes in the Aliyun cloud for the last five years. We discuss our lessons on the design tradeoffs with an emphasis on three unique features in thread, memory, and traffic models. The extensive microbenchmark evaluations and performance statistics collected from the field demonstrate that Luna can outperform kernel and other user-space TCP stacks with up to 3.5X in throughput and reduce up to 53% latency.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">2023 USENIX Annual Technical Conference</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/tcp/">TCP</a>
+  
+  <a class="badge badge-light" href="/tag/network/">Network</a>
+  
+  <a class="badge badge-light" href="/tag/storage/">storage</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://giorgioercixu.github.io/publication/atc23/&amp;text=Deploying%20User-space%20TCP%20at%20Cloud%20Scale:%20Three%20Easy%20Pieces%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://giorgioercixu.github.io/publication/atc23/&amp;t=Deploying%20User-space%20TCP%20at%20Cloud%20Scale:%20Three%20Easy%20Pieces%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Deploying%20User-space%20TCP%20at%20Cloud%20Scale:%20Three%20Easy%20Pieces%20%28to%20appear%29&amp;body=https://giorgioercixu.github.io/publication/atc23/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://giorgioercixu.github.io/publication/atc23/&amp;title=Deploying%20User-space%20TCP%20at%20Cloud%20Scale:%20Three%20Easy%20Pieces%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Deploying%20User-space%20TCP%20at%20Cloud%20Scale:%20Three%20Easy%20Pieces%20%28to%20appear%29%20https://giorgioercixu.github.io/publication/atc23/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://giorgioercixu.github.io/publication/atc23/&amp;title=Deploying%20User-space%20TCP%20at%20Cloud%20Scale:%20Three%20Easy%20Pieces%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
 
   
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/atc22/">NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</a></li>
+      
+      <li><a href="/publication/icde22/">imDedup: A Lossless Deduplication Scheme to Eliminate Fine-grained Redundancy among Images</a></li>
+      
+      <li><a href="/publication/atc21/">Max: A Multicore-Accelerated File System for Flash Storage</a></li>
+      
+      <li><a href="/publication/osdi20/">Write Dependency Disentanglement with HORAE</a></li>
+      
+      <li><a href="/publication/fast21/">Concordia: Distributed shared memory with in-network cache coherence</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
 </div>
   </div>
 

@@ -5,12 +5,20 @@
     <link>https://giorgioercixu.github.io/tag/storage/</link>
       <atom:link href="https://giorgioercixu.github.io/tag/storage/index.xml" rel="self" type="application/rss+xml" />
     <description>storage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Apr 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
       <title>storage</title>
       <link>https://giorgioercixu.github.io/tag/storage/</link>
     </image>
+    
+    <item>
+      <title>Deploying User-space TCP at Cloud Scale: Three Easy Pieces (to appear)</title>
+      <link>https://giorgioercixu.github.io/publication/atc23/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://giorgioercixu.github.io/publication/atc23/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations (to appear)</title>
@@ -73,14 +81,6 @@
       <link>https://giorgioercixu.github.io/publication/osdi20/</link>
       <pubDate>Wed, 04 Nov 2020 00:00:00 +0000</pubDate>
       <guid>https://giorgioercixu.github.io/publication/osdi20/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CoinPurse: A Device-Assisted File System with Dual Interfaces</title>
-      <link>https://giorgioercixu.github.io/publication/dac20/</link>
-      <pubDate>Mon, 20 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://giorgioercixu.github.io/publication/dac20/</guid>
       <description></description>
     </item>
     
