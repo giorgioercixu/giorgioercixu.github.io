@@ -30,7 +30,9 @@
   
     
   
-  <meta name="description" content="Modern cloud block service provides cloud users with virtual block disks (VDisks), and it usually relies on a forwarding layer consisting of multiple proxy servers to forward the block-level writes from applications to the underlying distributed storage. However, we discover that severe traffic imbalance exists among the proxy servers at the forwarding layer, thus creating a performance bottleneck which severely prolongs the latency of accessing VDisks. Worse yet, due to the diverse access patterns of VDdisks, stable traffic and burst traffic coexist at the forwarding layer, and thus making existing load balancing designs inefficient for balancing the traffic at the forwarding layer of VDisks, as they are unaware of and also lacks the ability to differentiate the decomposable burst and stable traffic. To this end, we propose a novel traffic forwarding scheme DiffForward for cloud block services. DiffForward differentiates the burst traffic from stable traffic in an accurate and efficient way at the client side, then it forwards the burst traffic to a decentralized distributed log store to realize real-time load balance by writing the data in a round-robin manner and balances the stable traffic by segmentation. DiffForward also judiciously coordinates the stable and burst traffic and preserves strong consistency under differentiated forwarding. Extensive experiments with reallife workloads on our prototype show that DiffForward effectively balances the traffic at the forwarding layer at a fine-grained subsecond level, thus significantly reducing the write latency of VDisks." />
+  <meta name="description" content="Cloud local disks are attractive for their affordable price and high performance. The recent advancement in CPUs motivates cloud vendors to further multiplex the computing resources to serve more users. Unfortunately, such proposals are constrained by the limited offerings of cloud local disks per server as the underlying storage devices are either large but slow (e.g., HDDs) or fast yet small (e.g., NVMe SSDs).
+In this paper, we explore the possibility of leveraging high-capacity QLC-based SSDs for cloud local disks. However, the three preliminary unsuccessful attempts indicate that QLC SSDs cannot simply work as drop-in replacement. The root cause is the two levels of write amplification (WA) caused by device-level address mapping with Indirection Unit and NAND-level garbage collection.
+With these lessons learned, we propose SONIC, the next-gen local disks in the OASIS cloud. SONIC includes a high-performance SSD as write buffers and a large-capacity QLC SSD for persistence. With a two-level Logical to Physical (L2P) address mapping table, SONIC achieves fine-grained (4KB) data accessing and significantly alleviates the two levels of WA. Results show that SONIC always prevails with superior performance and can achieve up to 2.47x, 1.82x, and 2.03x speedups against the second-best peers in micro, application and deployment benchmarking, respectively. As of now, we have deployed SONIC on thousands of servers and made SONIC open-source to the public." />
 
   
   <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/publication/sigmetrics23/" />
@@ -294,8 +296,10 @@
   
   <meta property="og:site_name" content="Giorgio (Erci) Xu" />
   <meta property="og:url" content="https://giorgioercixu.github.io/publication/sigmetrics23/" />
-  <meta property="og:title" content="DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding (to appear) | Giorgio (Erci) Xu" />
-  <meta property="og:description" content="Modern cloud block service provides cloud users with virtual block disks (VDisks), and it usually relies on a forwarding layer consisting of multiple proxy servers to forward the block-level writes from applications to the underlying distributed storage. However, we discover that severe traffic imbalance exists among the proxy servers at the forwarding layer, thus creating a performance bottleneck which severely prolongs the latency of accessing VDisks. Worse yet, due to the diverse access patterns of VDdisks, stable traffic and burst traffic coexist at the forwarding layer, and thus making existing load balancing designs inefficient for balancing the traffic at the forwarding layer of VDisks, as they are unaware of and also lacks the ability to differentiate the decomposable burst and stable traffic. To this end, we propose a novel traffic forwarding scheme DiffForward for cloud block services. DiffForward differentiates the burst traffic from stable traffic in an accurate and efficient way at the client side, then it forwards the burst traffic to a decentralized distributed log store to realize real-time load balance by writing the data in a round-robin manner and balances the stable traffic by segmentation. DiffForward also judiciously coordinates the stable and burst traffic and preserves strong consistency under differentiated forwarding. Extensive experiments with reallife workloads on our prototype show that DiffForward effectively balances the traffic at the forwarding layer at a fine-grained subsecond level, thus significantly reducing the write latency of VDisks." /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:title" content="DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding | Giorgio (Erci) Xu" />
+  <meta property="og:description" content="Cloud local disks are attractive for their affordable price and high performance. The recent advancement in CPUs motivates cloud vendors to further multiplex the computing resources to serve more users. Unfortunately, such proposals are constrained by the limited offerings of cloud local disks per server as the underlying storage devices are either large but slow (e.g., HDDs) or fast yet small (e.g., NVMe SSDs).
+In this paper, we explore the possibility of leveraging high-capacity QLC-based SSDs for cloud local disks. However, the three preliminary unsuccessful attempts indicate that QLC SSDs cannot simply work as drop-in replacement. The root cause is the two levels of write amplification (WA) caused by device-level address mapping with Indirection Unit and NAND-level garbage collection.
+With these lessons learned, we propose SONIC, the next-gen local disks in the OASIS cloud. SONIC includes a high-performance SSD as write buffers and a large-capacity QLC SSD for persistence. With a two-level Logical to Physical (L2P) address mapping table, SONIC achieves fine-grained (4KB) data accessing and significantly alleviates the two levels of WA. Results show that SONIC always prevails with superior performance and can achieve up to 2.47x, 1.82x, and 2.03x speedups against the second-best peers in micro, application and deployment benchmarking, respectively. As of now, we have deployed SONIC on thousands of servers and made SONIC open-source to the public." /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
@@ -328,7 +332,7 @@
     "@type": "WebPage",
     "@id": "https://giorgioercixu.github.io/publication/sigmetrics23/"
   },
-  "headline": "DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding (to appear)",
+  "headline": "DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding",
   
   "datePublished": "2020-07-20T00:00:00Z",
   "dateModified": "2023-03-20T00:00:00Z",
@@ -346,7 +350,7 @@
       "url": "https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
     }
   },
-  "description": "Modern cloud block service provides cloud users with virtual block disks (VDisks), and it usually relies on a forwarding layer consisting of multiple proxy servers to forward the block-level writes from applications to the underlying distributed storage. However, we discover that severe traffic imbalance exists among the proxy servers at the forwarding layer, thus creating a performance bottleneck which severely prolongs the latency of accessing VDisks. Worse yet, due to the diverse access patterns of VDdisks, stable traffic and burst traffic coexist at the forwarding layer, and thus making existing load balancing designs inefficient for balancing the traffic at the forwarding layer of VDisks, as they are unaware of and also lacks the ability to differentiate the decomposable burst and stable traffic. To this end, we propose a novel traffic forwarding scheme DiffForward for cloud block services. DiffForward differentiates the burst traffic from stable traffic in an accurate and efficient way at the client side, then it forwards the burst traffic to a decentralized distributed log store to realize real-time load balance by writing the data in a round-robin manner and balances the stable traffic by segmentation. DiffForward also judiciously coordinates the stable and burst traffic and preserves strong consistency under differentiated forwarding. Extensive experiments with reallife workloads on our prototype show that DiffForward effectively balances the traffic at the forwarding layer at a fine-grained subsecond level, thus significantly reducing the write latency of VDisks."
+  "description": "Cloud local disks are attractive for their affordable price and high performance. The recent advancement in CPUs motivates cloud vendors to further multiplex the computing resources to serve more users. Unfortunately, such proposals are constrained by the limited offerings of cloud local disks per server as the underlying storage devices are either large but slow (e.g., HDDs) or fast yet small (e.g., NVMe SSDs).\nIn this paper, we explore the possibility of leveraging high-capacity QLC-based SSDs for cloud local disks. However, the three preliminary unsuccessful attempts indicate that QLC SSDs cannot simply work as drop-in replacement. The root cause is the two levels of write amplification (WA) caused by device-level address mapping with Indirection Unit and NAND-level garbage collection.\nWith these lessons learned, we propose SONIC, the next-gen local disks in the OASIS cloud. SONIC includes a high-performance SSD as write buffers and a large-capacity QLC SSD for persistence. With a two-level Logical to Physical (L2P) address mapping table, SONIC achieves fine-grained (4KB) data accessing and significantly alleviates the two levels of WA. Results show that SONIC always prevails with superior performance and can achieve up to 2.47x, 1.82x, and 2.03x speedups against the second-best peers in micro, application and deployment benchmarking, respectively. As of now, we have deployed SONIC on thousands of servers and made SONIC open-source to the public."
 }
 </script>
 
@@ -362,7 +366,7 @@
 
 
 
-  <title>DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding (to appear) | Giorgio (Erci) Xu</title>
+  <title>DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding | Giorgio (Erci) Xu</title>
 </head>
 
 
@@ -695,7 +699,7 @@
   
   
 <div class="article-container pt-3">
-  <h1>DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding (to appear)</h1>
+  <h1>DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding</h1>
 
   
 
@@ -754,6 +758,45 @@
 
 
 
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://dl.acm.org/doi/10.1145/3579444" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
 
   
 </div>
@@ -764,7 +807,9 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract">Modern cloud block service provides cloud users with virtual block disks (VDisks), and it usually relies on a forwarding layer consisting of multiple proxy servers to forward the block-level writes from applications to the underlying distributed storage. However, we discover that severe traffic imbalance exists among the proxy servers at the forwarding layer, thus creating a performance bottleneck which severely prolongs the latency of accessing VDisks. Worse yet, due to the diverse access patterns of VDdisks, stable traffic and burst traffic coexist at the forwarding layer, and thus making existing load balancing designs inefficient for balancing the traffic at the forwarding layer of VDisks, as they are unaware of and also lacks the ability to differentiate the decomposable burst and stable traffic. To this end, we propose a novel traffic forwarding scheme DiffForward for cloud block services. DiffForward differentiates the burst traffic from stable traffic in an accurate and efficient way at the client side, then it forwards the burst traffic to a decentralized distributed log store to realize real-time load balance by writing the data in a round-robin manner and balances the stable traffic by segmentation. DiffForward also judiciously coordinates the stable and burst traffic and preserves strong consistency under differentiated forwarding. Extensive experiments with reallife workloads on our prototype show that DiffForward effectively balances the traffic at the forwarding layer at a fine-grained subsecond level, thus significantly reducing the write latency of VDisks.</p>
+    <p class="pub-abstract">Cloud local disks are attractive for their affordable price and high performance. The recent advancement in CPUs motivates cloud vendors to further multiplex the computing resources to serve more users. Unfortunately, such proposals are constrained by the limited offerings of cloud local disks per server as the underlying storage devices are either large but slow (e.g., HDDs) or fast yet small (e.g., NVMe SSDs).
+In this paper, we explore the possibility of leveraging high-capacity QLC-based SSDs for cloud local disks. However, the three preliminary unsuccessful attempts indicate that QLC SSDs cannot simply work as drop-in replacement. The root cause is the two levels of write amplification (WA) caused by device-level address mapping with Indirection Unit and NAND-level garbage collection.
+With these lessons learned, we propose SONIC, the next-gen local disks in the OASIS cloud. SONIC includes a high-performance SSD as write buffers and a large-capacity QLC SSD for persistence. With a two-level Logical to Physical (L2P) address mapping table, SONIC achieves fine-grained (4KB) data accessing and significantly alleviates the two levels of WA. Results show that SONIC always prevails with superior performance and can achieve up to 2.47x, 1.82x, and 2.03x speedups against the second-best peers in micro, application and deployment benchmarking, respectively. As of now, we have deployed SONIC on thousands of servers and made SONIC open-source to the public.</p>
     
 
     
@@ -830,7 +875,7 @@
       
       
       <li>
-        <a href="https://twitter.com/intent/tweet?url=https://giorgioercixu.github.io/publication/sigmetrics23/&amp;text=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-twitter">
+        <a href="https://twitter.com/intent/tweet?url=https://giorgioercixu.github.io/publication/sigmetrics23/&amp;text=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding" target="_blank" rel="noopener" class="share-btn-twitter">
           <i class="fab fa-twitter"></i>
         </a>
       </li>
@@ -843,7 +888,7 @@
       
       
       <li>
-        <a href="https://www.facebook.com/sharer.php?u=https://giorgioercixu.github.io/publication/sigmetrics23/&amp;t=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-facebook">
+        <a href="https://www.facebook.com/sharer.php?u=https://giorgioercixu.github.io/publication/sigmetrics23/&amp;t=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding" target="_blank" rel="noopener" class="share-btn-facebook">
           <i class="fab fa-facebook"></i>
         </a>
       </li>
@@ -856,7 +901,7 @@
       
       
       <li>
-        <a href="mailto:?subject=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding%20%28to%20appear%29&amp;body=https://giorgioercixu.github.io/publication/sigmetrics23/" target="_blank" rel="noopener" class="share-btn-email">
+        <a href="mailto:?subject=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding&amp;body=https://giorgioercixu.github.io/publication/sigmetrics23/" target="_blank" rel="noopener" class="share-btn-email">
           <i class="fas fa-envelope"></i>
         </a>
       </li>
@@ -869,7 +914,7 @@
       
       
       <li>
-        <a href="https://www.linkedin.com/shareArticle?url=https://giorgioercixu.github.io/publication/sigmetrics23/&amp;title=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-linkedin">
+        <a href="https://www.linkedin.com/shareArticle?url=https://giorgioercixu.github.io/publication/sigmetrics23/&amp;title=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding" target="_blank" rel="noopener" class="share-btn-linkedin">
           <i class="fab fa-linkedin-in"></i>
         </a>
       </li>
@@ -882,7 +927,7 @@
       
       
       <li>
-        <a href="whatsapp://send?text=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding%20%28to%20appear%29%20https://giorgioercixu.github.io/publication/sigmetrics23/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+        <a href="whatsapp://send?text=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding%20https://giorgioercixu.github.io/publication/sigmetrics23/" target="_blank" rel="noopener" class="share-btn-whatsapp">
           <i class="fab fa-whatsapp"></i>
         </a>
       </li>
@@ -895,7 +940,7 @@
       
       
       <li>
-        <a href="https://service.weibo.com/share/share.php?url=https://giorgioercixu.github.io/publication/sigmetrics23/&amp;title=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding%20%28to%20appear%29" target="_blank" rel="noopener" class="share-btn-weibo">
+        <a href="https://service.weibo.com/share/share.php?url=https://giorgioercixu.github.io/publication/sigmetrics23/&amp;title=DiffForward:%20On%20Balancing%20Forwarding%20Traffic%20for%20Modern%20Cloud%20Block%20Services%20via%20Differentiated%20Forwarding" target="_blank" rel="noopener" class="share-btn-weibo">
           <i class="fab fa-weibo"></i>
         </a>
       </li>
@@ -1048,7 +1093,7 @@
       
 
     
-    <script src="/js/vendor-bundle.min.9592335d574f7a97010f99b90ad0f310.js"></script>
+    <script src="/js/vendor-bundle.min.5a3a4e7cbc7b4e121b2d29312cf8ad59.js"></script>
 
     
     
@@ -1134,7 +1179,7 @@
       
     
     
-    <script src="/en/js/wowchemy.min.2cc80485e7b9001edba5cdf5b39a1f97.js"></script>
+    <script src="/en/js/wowchemy.min.5bb41a68c539a638856544de9689bd9c.js"></script>
 
     
 
