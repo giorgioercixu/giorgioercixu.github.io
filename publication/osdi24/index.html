@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="Storage Nomad" />
+  <meta name="description" content="In this paper, we focus on building a ransomware detection and recovery system for the cloud block store. We start with discussing the possibility of directly using existing methods or porting one to our scenario with modifications. These attempts, though failed, led us to identify the unique IO characteristics of ransomware, and further drive us to build Deftpunk, a block-level ransomware detection and recovery system. Deftpunk uses a two-layer classifier for fast and accurate detection, creates pre-/post-attack snapshots to avoid data loss, and leverages the log-structured support for low overhead recovery. Our large-scale benchmark shows that Deftpunk can achieve nearly 100% recall across 13 types of ransomware and low runtime overhead." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/tags/" />
+  <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/publication/osdi24/" />
 
   
 
@@ -268,8 +268,6 @@
   
 
   
-    <link rel="alternate" href="/tags/index.xml" type="application/rss+xml" title="Giorgio (Erci) Xu" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -278,7 +276,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://giorgioercixu.github.io/tags/" />
+  <link rel="canonical" href="https://giorgioercixu.github.io/publication/osdi24/" />
 
   
   
@@ -295,33 +293,80 @@
   <meta property="twitter:card" content="summary" />
   
   <meta property="og:site_name" content="Giorgio (Erci) Xu" />
-  <meta property="og:url" content="https://giorgioercixu.github.io/tags/" />
-  <meta property="og:title" content="Tags | Giorgio (Erci) Xu" />
-  <meta property="og:description" content="Storage Nomad" /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
+  <meta property="og:url" content="https://giorgioercixu.github.io/publication/osdi24/" />
+  <meta property="og:title" content="Ransom Access Memories: Achieving Practical Ransomware Protection in Cloud with DeftPunk | Giorgio (Erci) Xu" />
+  <meta property="og:description" content="In this paper, we focus on building a ransomware detection and recovery system for the cloud block store. We start with discussing the possibility of directly using existing methods or porting one to our scenario with modifications. These attempts, though failed, led us to identify the unique IO characteristics of ransomware, and further drive us to build Deftpunk, a block-level ransomware detection and recovery system. Deftpunk uses a two-layer classifier for fast and accurate detection, creates pre-/post-attack snapshots to avoid data loss, and leverages the log-structured support for low overhead recovery. Our large-scale benchmark shows that Deftpunk can achieve nearly 100% recall across 13 types of ransomware and low runtime overhead." /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
     <meta property="twitter:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2024-05-04T00:00:00&#43;00:00" />
+      <meta
+        property="article:published_time"
+        content="2021-07-04T00:00:00&#43;00:00"
+      />
     
+    <meta property="article:modified_time" content="2024-05-04T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://giorgioercixu.github.io/publication/osdi24/"
+  },
+  "headline": "Ransom Access Memories: Achieving Practical Ransomware Protection in Cloud with DeftPunk",
+  
+  "datePublished": "2021-07-04T00:00:00Z",
+  "dateModified": "2024-05-04T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Zhongyu Wang"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Giorgio (Erci) Xu",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "In this paper, we focus on building a ransomware detection and recovery system for the cloud block store. We start with discussing the possibility of directly using existing methods or porting one to our scenario with modifications. These attempts, though failed, led us to identify the unique IO characteristics of ransomware, and further drive us to build Deftpunk, a block-level ransomware detection and recovery system. Deftpunk uses a two-layer classifier for fast and accurate detection, creates pre-/post-attack snapshots to avoid data loss, and leverages the log-structured support for low overhead recovery. Our large-scale benchmark shows that Deftpunk can achieve nearly 100% recall across 13 types of ransomware and low runtime overhead."
+}
+</script>
+
+  
+
+  
+
   
 
   
 
 
 
-  
-
-  
 
 
-
-
-
-  <title>Tags | Giorgio (Erci) Xu</title>
+  <title>Ransom Access Memories: Achieving Practical Ransomware Protection in Cloud with DeftPunk | Giorgio (Erci) Xu</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   "  >
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="693c680f41aa84836693ba504973d609" >
 
   
   
@@ -629,6 +674,17 @@
 
 
 
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
 
 
 
@@ -637,59 +693,38 @@
 
   
   
+  
+<div class="article-container pt-3">
+  <h1>Ransom Access Memories: Achieving Practical Ransomware Protection in Cloud with DeftPunk</h1>
+
+  
+
   
     
-  
-<div class="universal-wrapper pt-3">
-  <h1>Tags</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-  
-
-  
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/ebs/" >EBS</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
 
 
 <div class="article-metadata">
 
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      Zhongyu Wang</span>, <span >
+      Yaheng Song</span>, <span >
+      Erci Xu (Corresponding)</span>, <span >
+      Haonan Wu</span>, <span >
+      Guangxun Tong</span>, <span >
+      Haoran Li</span>, <span >
+      Jincheng Liu</span>, <span >
+      Lijun Ding</span>, <span >
+      Rong Liu</span>, <span >
+      Jiaji Zhu</span>, <span >
+      Jiesheng Wu</span>
+  </div>
   
   
 
@@ -699,7 +734,7 @@
     
       
     
-    May 4, 2024
+    May 2024
   </span>
   
 
@@ -719,734 +754,281 @@
 
 </div>
 
-      
-    </div>
-
     
 
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
+
+
+
+
+  
 </div>
 
+
+
+  <div class="article-container">
+
     
-  
+    <h3>Abstract</h3>
+    <p class="pub-abstract">In this paper, we focus on building a ransomware detection and recovery system for the cloud block store. We start with discussing the possibility of directly using existing methods or porting one to our scenario with modifications. These attempts, though failed, led us to identify the unique IO characteristics of ransomware, and further drive us to build Deftpunk, a block-level ransomware detection and recovery system. Deftpunk uses a two-layer classifier for fast and accurate detection, creates pre-/post-attack snapshots to avoid data loss, and leverages the log-structured support for low overhead recovery. Our large-scale benchmark shows that Deftpunk can achieve nearly 100% recall across 13 types of ransomware and low runtime overhead.</p>
     
-      
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/security/" >security</a>
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#1">
+              Conference paper
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
     </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">18th USENIX Symposium on Operating Systems Design and Implementation</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
 
     
 
-    <div class="stream-meta article-metadata">
 
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tag/ebs/">EBS</a>
+  
+  <a class="badge badge-light" href="/tag/storage/">storage</a>
+  
+  <a class="badge badge-light" href="/tag/security/">security</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
       
-
+      
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://giorgioercixu.github.io/publication/osdi24/&amp;text=Ransom%20Access%20Memories:%20Achieving%20Practical%20Ransomware%20Protection%20in%20Cloud%20with%20DeftPunk" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-    
-    May 4, 2024
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/storage/" >storage</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://giorgioercixu.github.io/publication/osdi24/&amp;t=Ransom%20Access%20Memories:%20Achieving%20Practical%20Ransomware%20Protection%20in%20Cloud%20with%20DeftPunk" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
       
-    
-    May 4, 2024
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/network/" >Network</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Ransom%20Access%20Memories:%20Achieving%20Practical%20Ransomware%20Protection%20in%20Cloud%20with%20DeftPunk&amp;body=https://giorgioercixu.github.io/publication/osdi24/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
       
-    
-    Apr 20, 2024
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/tcp/" >TCP</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://giorgioercixu.github.io/publication/osdi24/&amp;title=Ransom%20Access%20Memories:%20Achieving%20Practical%20Ransomware%20Protection%20in%20Cloud%20with%20DeftPunk" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
     
       
-    
-    Apr 20, 2024
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/block-store/" >block store</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Ransom%20Access%20Memories:%20Achieving%20Practical%20Ransomware%20Protection%20in%20Cloud%20with%20DeftPunk%20https://giorgioercixu.github.io/publication/osdi24/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
     
       
-    
-    Feb 20, 2024
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/chinese/" >Chinese</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
       
         
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
       
-    
-    Oct 7, 2021
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
       
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
       
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/review/" >Review</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Oct 7, 2021
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/database/" >Database</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Apr 20, 2023
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-    
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="media stream-item">
-  <div class="media-body">
-
-    <div class="section-subheading article-title mb-0 mt-0">
-      <a href="/tag/ssd/" >SSD</a>
-    </div>
-
-    
-
-    <div class="stream-meta article-metadata">
-
-      
-
-      
-        
-
-
-<div class="article-metadata">
-
-  
-  
-
-  
-  <span class="article-date">
-    
-    
-      
-    
-    Apr 20, 2023
-  </span>
-  
-
-  
-
-  
-
-  
-  
-  
-  
-  
-  
-
-  
-  
-
-</div>
-
-      
-    </div>
-
-    
-
-  </div>
-  <div class="ml-3">
-    
-    
-  </div>
-</div>
-
-    
-  
-
-  
-<nav class="mt-1">
-  <ul class="pagination justify-content-center">
-    
-    
-    <li class="page-item"><a class="page-link" href="/tags/page/2/">&raquo;</a></li>
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://giorgioercixu.github.io/publication/osdi24/&amp;title=Ransom%20Access%20Memories:%20Achieving%20Practical%20Ransomware%20Protection%20in%20Cloud%20with%20DeftPunk" target="_blank" rel="noopener" class="share-btn-weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
     
   </ul>
-</nav>
+</div>
 
 
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/fast24/">What&#39;s the Story in EBS Glory: Evolutions and Lessons in Building Cloud Block Store (awarded Best Paper)</a></li>
+      
+      <li><a href="/publication/eurosys24/">CSAL: the Next-Gen Local Disks for the Cloud</a></li>
+      
+      <li><a href="/publication/atc23/">Deploying User-space TCP at Cloud Scale with LUNA</a></li>
+      
+      <li><a href="/publication/atc22/">NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</a></li>
+      
+      <li><a href="/publication/osdi20/">Write Dependency Disentanglement with HORAE</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
 </div>
   </div>
 
