@@ -1,2740 +1,1228 @@
-<!DOCTYPE html><html lang="en-us" >
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  
-  
-  
-    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
-  
-
-  
-
-  
-  
-  
-  
-  
     
-    
-    
-  
-  
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
-  <meta name="author" content="Giorgio (Erci) Xu" />
-
-  
-  
-  
-    
-  
-  <meta name="description" content="Storage Nomad" />
-
-  
-  <link rel="alternate" hreflang="en-us" href="https://giorgioercixu.github.io/publication/" />
-
-  
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-  
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  
-
-  
-  
-  
-    <meta name="theme-color" content="#1565c0" />
-  
-
-  
-  
-
-  
-
-  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
-
-  
-  
-  
-    
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
-    
-
-    
-    
-    
-    
-      
-      
-    
-    
-    
-
-    
-    
-    
-      
-    
-    
-      
-      
-        
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
-        
-      
-    
-
-    
-    
-    
-
-    
-
-    
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-        
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-      
-      
-
-      
-      
-
-      
-    
-  
-
-  
-  
-  
-    
-      
-      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
-    
-  
-
-  
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/wowchemy.481af39c39ffd87b2d14f39943e7c723.css" />
-
-  
-
-
-
-  
-
-  
-
-  
-
-
-
-
-  
-  
-  
-
-  
-    <link rel="alternate" href="/publication/index.xml" type="application/rss+xml" title="Giorgio (Erci) Xu" />
-  
-
-  
-    <link rel="manifest" href="/manifest.webmanifest" />
-  
-
-  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
-  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
-
-  <link rel="canonical" href="https://giorgioercixu.github.io/publication/" />
-
-  
-  
-  
-  
-  
-  
-  
-  
-    
-    
-  
-  
-  <meta property="twitter:card" content="summary" />
-  
-  <meta property="og:site_name" content="Giorgio (Erci) Xu" />
-  <meta property="og:url" content="https://giorgioercixu.github.io/publication/" />
-  <meta property="og:title" content="Publications | Giorgio (Erci) Xu" />
-  <meta property="og:description" content="Storage Nomad" /><meta property="og:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" />
-    <meta property="twitter:image" content="https://giorgioercixu.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png" /><meta property="og:locale" content="en-us" />
-  
-    
-      <meta property="og:updated_time" content="2024-05-04T00:00:00&#43;00:00" />
-    
-  
-
-  
-
-
-
-  
-
-  
-
-
-
-
-
-  <title>Publications | Giorgio (Erci) Xu</title>
 </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Giorgio (Erci) Xu</a>
+        <div class="navbar-nav mr-auto">
+            
+    
+    
+    <a class="nav-item nav-link"
+       href="/">
+        Home 
+    </a>
+    
 
+            
+    
+    
+    <a class="nav-item nav-link active" aria-current="page"
+       href="/publication/">
+        Publication 
+    </a>
+    
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="3a079e7dad19be978a318345a7749d34" >
+            
+    
+    
+    <a class="nav-item nav-link"
+       href="/posts/">
+        Post 
+    </a>
+    
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  <script src="/js/wowchemy-init.min.1d309c6b3f55725f8869af2651084961.js"></script>
-
-  
-
-
-<aside class="search-modal" id="search">
-  <div class="container">
-    <section class="search-header">
-
-      <div class="row no-gutters justify-content-between mb-3">
-        <div class="col-6">
-          <h1>Search</h1>
         </div>
-        <div class="col-6 col-search-close">
-          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
-        </div>
-      </div>
+    </nav>
 
-      <div id="search-box">
-        
-        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
-        aria-label="Search...">
-        
-      </div>
-
-      
-      
-
-      
-
-    </section>
-    <section class="section-search-results">
-
-      <div id="search-hits">
-        
-      </div>
-
-    </section>
-  </div>
-</aside>
-
-
-
-  <div class="page-header">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container-xl">
-
-    
-    <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/">Giorgio (Erci) Xu</a>
-    </div>
-    
-
-    
-    <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
-    <span><i class="fas fa-bars"></i></span>
-    </button>
-    
-
-    
-    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/">Giorgio (Erci) Xu</a>
-    </div>
-    
-
-    
-    
-    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
-
-      
-      <ul class="navbar-nav d-md-inline-flex">
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#about"><span>Home</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#publications"><span>Publication</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Blog</span></a>
-        </li>
-
-        
-        
-
-        
-
-        
-        
-        
-          
-        
-
-        
-
-        
-        
-        
-        
-
-        
-          
-            
-            
-          
-          
-            
-            
-            
-              
-            
-            
-          
-        
-
-        <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
-        </li>
-
-        
-        
-
-      
-
-        
-      </ul>
-    </div>
-
-    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-
-      
-      
-        
-      
-
-      
-      
-      <li class="nav-item">
-        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
-      </li>
-      
-
-      
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
-          <i class="fas fa-moon" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
-      
-
-      
-      
-
-    </ul>
-
-  </div>
-</nav>
-
-
-  </div>
-
-  <div class="page-body">
-    
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-  
-  
-    
-  
-<div class="universal-wrapper pt-3">
-  <h1>Publications</h1>
-
-  
-
-  
-</div>
-
-
-
-<div class="universal-wrapper">
-  <div class="row">
-    <div class="col-lg-12">
-
-      
-
-      
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-        
-        
-      
-
-      <div class="form-row mb-4">
-        <div class="col-auto">
-          <input type="search" class="filter-search" placeholder="Search..." autocapitalize="off"
-          autocomplete="off" autocorrect="off" role="textbox" spellcheck="false">
-        </div>
-        <div class="col-auto">
-          <select class="pub-filters pubtype-select form-control form-control-sm" data-filter-group="pubtype">
-            <option value="*">Type</option>
-            
-            
-            <option value=".pubtype-1">
-              Conference paper
-            </option>
-            
-          </select>
-        </div>
-        <div class="col-auto">
-          <select class="pub-filters form-control form-control-sm" data-filter-group="year">
-            <option value="*">Date</option>
-            
-            
-            
-            <option value=".year-2024">
-              2024
-            </option>
-            
-            <option value=".year-2023">
-              2023
-            </option>
-            
-            <option value=".year-2022">
-              2022
-            </option>
-            
-            <option value=".year-2021">
-              2021
-            </option>
-            
-            <option value=".year-2020">
-              2020
-            </option>
-            
-            <option value=".year-2019">
-              2019
-            </option>
-            
-            <option value=".year-2018">
-              2018
-            </option>
-            
-            <option value=".year-2016">
-              2016
-            </option>
-            
-            
-          </select>
-        </div>
-      </div>
-
-      <div id="container-publications">
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Zhongyu Wang</span>, <span >
-      Yaheng Song</span>, <span >
-      Erci Xu (Corresponding)</span>, <span >
-      Haonan Wu</span>, <span >
-      Guangxun Tong</span>, <span >
-      Haoran Li</span>, <span >
-      Jincheng Liu</span>, <span >
-      Lijun Ding</span>, <span >
-      Rong Liu</span>, <span >
-      Jiaji Zhu</span>, <span >
-      Jiesheng Wu</span>
-  </span>
-  (2024).
-  <a href="/publication/osdi24/">Ransom Access Memories: Achieving Practical Ransomware Protection in Cloud with DeftPunk</a>.
-  In <em>OSDI'24 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Yanbo Zhou</span>, <span >
-      Erci Xu (Corresponding)</span>, <span >
-      Li Zhang</span>, <span >
-      Kapil Karkra</span>, <span >
-      Mariusz Barczak</span>, <span >
-      Wayne Gao</span>, <span >
-      Wojciech Malikowski</span>, <span >
-      Mateusz Kozlowski</span>, <span >
-      Łukasz Łasek</span>, <span >
-      Ruiming Lu</span>, <span >
-      Feng Yang</span>, <span >
-      Lilong Huang</span>, <span >
-      Xiaolu Zhang</span>, <span >
-      Wenrui Li</span>, <span >
-      Jinhu Li</span>, <span >
-      Keqiang Niu</span>, <span >
-      Jiaji Zhu</span>, <span >
-      Jiesheng Wu</span>
-  </span>
-  (2024).
-  <a href="/publication/eurosys24/">CSAL: the Next-Gen Local Disks for the Cloud</a>.
-  In <em>Eurosys'24 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2024">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Weidong Zhang</span>, <span >
-      Erci Xu (Corresponding)</span>, <span >
-      Qiuping Wang</span>, <span >
-      Xiaolu Zhang</span>, <span >
-      Yuesheng Gu</span>, <span >
-      Zhenwei Lu</span>, <span >
-      Tao Ouyang</span>, <span >
-      Guanqun Dai</span>, <span >
-      Wenwen Peng</span>, <span >
-      Zhe Xu</span>, <span >
-      Shuo Zhang</span>, <span >
-      Dong Wu</span>, <span >
-      Yilei Peng</span>, <span >
-      Tianyun Wang</span>, <span >
-      Haoming Zhang</span>, <span >
-      Jiasheng Wang</span>, <span >
-      Wenyuan Yan</span>, <span >
-      Yuanyuan Dong</span>, <span >
-      Wenhui Yao</span>, <span >
-      Zhongjie Wu</span>, <span >
-      Lingjun Zhu</span>, <span >
-      Chao Shi</span>, <span >
-      Yinhu Wang</span>, <span >
-      Rong Liu</span>, <span >
-      Junping Wu</span>, <span >
-      Jiaji Zhu</span>, <span >
-      Jiesheng Wu</span>
-  </span>
-  (2024).
-  <a href="/publication/fast24/">What&#39;s the Story in EBS Glory: Evolutions and Lessons in Building Cloud Block Store (awarded Best Paper)</a>.
-  In <em>FAST'24 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/system/files/fast24-zhang-weidong.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Lingjun Zhu</span>, <span >
-      Yifan Shen</span>, <span >
-      Erci Xu (Corresponding)</span>, <span >
-      Bo Shi</span>, <span >
-      Ting Fu</span>, <span >
-      Shu Ma</span>, <span >
-      Shuguang Chen</span>, <span >
-      Zhongyu Wang</span>, <span >
-      Haonan Wu</span>, <span >
-      Zhendan Yang</span>, <span >
-      Xingyu Liao</span>, <span >
-      Wei Lin</span>, <span >
-      Yijun Hou</span>, <span >
-      Rong Liu</span>, <span >
-      Chao Shi</span>, <span >
-      Jiaji Zhu</span>, <span >
-      Jiesheng Wu</span>
-  </span>
-  (2023).
-  <a href="/publication/atc23/">Deploying User-space TCP at Cloud Scale with LUNA</a>.
-  In <em>ATC'23 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/system/files/atc23-zhu-lingjun.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/system/files/atc23_slides_zhu-lingjun.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Haochen He</span>, <span >
-      Erci Xu</span>, <span >
-      Shanshan Li</span>, <span >
-      Zhouyang Jia</span>, <span >
-      Si Zheng</span>, <span >
-      Yue Yu</span>, <span >
-      Jun Ma</span>, <span >
-      Xiangke Liao</span>
-  </span>
-  (2023).
-  <a href="/publication/vldb23/">When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations</a>.
-  In <em>VLDB'23 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.vldb.org/pvldb/vol16/p1712-he.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Teng Wang</span>, <span >
-      Zhouyang Jia</span>, <span >
-      Shanshan Li</span>, <span >
-      Si Zheng</span>, <span >
-      Yue Yu</span>, <span >
-      Erci Xu</span>, <span >
-      Shaoliang Peng</span>, <span >
-      Xiangke Liao</span>
-  </span>
-  (2023).
-  <a href="/publication/icse23/">Understanding and Detecting On-the-Fly Configuration Bugs (awarded Distinguished Paper)</a>.
-  In <em>ICSE'23 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://leopard-lab.github.io/paper/icse23-Parachute.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://github.com/wangteng13/Parachute" target="_blank" rel="noopener">
-  Code
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Wenzhe Zhu</span>, <span >
-      Yongkun Li</span>, <span >
-      Erci Xu</span>, <span >
-      Fei Li</span>, <span >
-      Yinlong Xu</span>, <span >
-      John C.S. Lui</span>
-  </span>
-  (2023).
-  <a href="/publication/sigmetrics23/">DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding</a>.
-  In <em>SIGMETRICS'23 (CCF-B)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/10.1145/3579444" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Su Zhou</span>, <span >
-      Erci Xu (Corresponding)</span>, <span >
-      Hao Wu</span>, <span >
-      Yu Du</span>, <span >
-      Jiacheng Cui</span>, <span >
-      Wanyu Fu</span>, <span >
-      Chang Liu</span>, <span >
-      Yingni Wang</span>, <span >
-      Wenbo Wang</span>, <span >
-      Shouqu Sun</span>, <span >
-      Xianfei Wang</span>, <span >
-      Bo Feng</span>, <span >
-      Biyun Zhu</span>, <span >
-      Xin Tong</span>, <span >
-      Weikang Kong</span>, <span >
-      Linyan Liu</span>, <span >
-      Zhongjie Wu</span>, <span >
-      Jinbo Wu</span>, <span >
-      Qingchao Luo</span>, <span >
-      Jiesheng Wu</span>
-  </span>
-  (2023).
-  <a href="/publication/fast23-2/">SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives</a>.
-  In <em>FAST'23 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/system/files/fast23-zhou-su.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/fast23-2/fast23_smrstore.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=b_iW94OQmbY" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2023">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Ruiming Lu</span>, <span >
-      Erci Xu (co-first)</span>, <span >
-      Yiming Zhang</span>, <span >
-      Fengyi Zhu</span>, <span >
-      Zhaosheng Zhu</span>, <span >
-      Mengtian Wang</span>, <span >
-      Zongpeng Zhu</span>, <span >
-      Guangtao Xue</span>, <span >
-      Jiwu Shu</span>, <span >
-      Minglu Li</span>, <span >
-      Jiesheng Wu</span>
-  </span>
-  (2023).
-  <a href="/publication/fast23-1/">Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems (awarded Best Paper)</a>.
-  In <em>FAST'23 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/system/files/fast23-lu.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://tianchi.aliyun.com/dataset/144479?lang=en-us" target="_blank" rel="noopener">
-  Dataset
-</a>
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/fast23-1/fast23_slides_extended.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.youtube.com/watch?v=DcDnrZY11Yw" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2022">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Ruiming Lu</span>, <span >
-      Erci Xu (co-first)</span>, <span >
-      Yiming Zhang</span>, <span >
-      Zhaosheng Zhu</span>, <span >
-      Mengtian Wang</span>, <span >
-      Zongpeng Zhu</span>, <span >
-      Guangtao Xue</span>, <span >
-      Minglu Li</span>, <span >
-      Jiesheng Wu</span>
-  </span>
-  (2022).
-  <a href="/publication/atc22/">NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</a>.
-  In <em>ATC'22 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/atc22/ATC22.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/atc22/cite.bib">
-  Cite
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://tianchi.aliyun.com/dataset/128972" target="_blank" rel="noopener">
-  Dataset
-</a>
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/sites/default/files/conference/protected-files/atc22_slides_lu.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/wDS-CRyTDlA" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2022">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Cai Deng</span>, <span >
-      Qi Chen</span>, <span >
-      Xiangyu Zou</span>, <span >
-      Erci Xu</span>, <span >
-      Bo Tang</span>, <span >
-      Wen Xia</span>
-  </span>
-  (2022).
-  <a href="/publication/icde22/">imDedup: A Lossless Deduplication Scheme to Eliminate Fine-grained Redundancy among Images</a>.
-  In <em>ICDE'22 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/document/9835287" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/icde22/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Xiaojian Liao</span>, <span >
-      Youyou Lu</span>, <span >
-      Erci Xu</span>, <span >
-      Jiwu Shu</span>
-  </span>
-  (2021).
-  <a href="/publication/atc21/">Max: A Multicore-Accelerated File System for Flash Storage</a>.
-  In <em>ATC'21 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/atc21/ATC21.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/atc21/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/system/files/atc21_slides_liao_0.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/F6-0rFGHPSI" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Wang Li</span>, <span >
-      Zhouyang Jia</span>, <span >
-      Shanshan Li</span>, <span >
-      Yuanliang Zhang</span>, <span >
-      Teng Wang</span>, <span >
-      Erci Xu</span>, <span >
-      Ji Wang</span>, <span >
-      Xiangke Liao</span>
-  </span>
-  (2021).
-  <a href="/publication/issta21/">Challenges and opportunities: an in-depth empirical study on configuration error injection testing</a>.
-  In <em>ISSTA'21 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://dl.acm.org/doi/abs/10.1145/3460319.3464799" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/issta21/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Zhouyang Jia</span>, <span >
-      Shanshan Li</span>, <span >
-      Tingting Yu</span>, <span >
-      Zeng Chen</span>, <span >
-      Erci Xu</span>, <span >
-      Xiaodong Liu</span>, <span >
-      Ji Wang</span>, <span >
-      Xiangke Liao</span>
-  </span>
-  (2021).
-  <a href="/publication/icse21/">DepOwl: Detecting Dependency Bugs to Prevent Compatibility Failures</a>.
-  In <em>ICSE'21 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://ieeexplore.ieee.org/abstract/document/9402138" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/icse21/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2021">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Qing Wang</span>, <span >
-      Youyou Lu</span>, <span >
-      Erci Xu</span>, <span >
-      Junru Li</span>, <span >
-      Youmin Chen</span>, <span >
-      Jiwu Shu</span>
-  </span>
-  (2021).
-  <a href="/publication/fast21/">Concordia: Distributed shared memory with in-network cache coherence</a>.
-  In <em>FAST'21 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/fast21/FAST21.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/fast21/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/sites/default/files/conference/protected-files/fast21_slides_wang.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/9m4W13vTjxk" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Xiaojian Liao</span>, <span >
-      Youyou Lu</span>, <span >
-      Erci Xu</span>, <span >
-      Jiwu Shu</span>
-  </span>
-  (2020).
-  <a href="/publication/osdi20/">Write Dependency Disentanglement with HORAE</a>.
-  In <em>OSDI'20 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/osdi20/OSDI20.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/osdi20/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/sites/default/files/conference/protected-files/osdi20_slides_liao.pdf" target="_blank" rel="noopener">
-  Slides
-</a>
-
-
-
-  
-  
-    
-  
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://youtu.be/PoHZ84DVvbk" target="_blank" rel="noopener">
-  Video
-</a>
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Haochen He</span>, <span >
-      Zhouyang Jia</span>, <span >
-      Shanshan Li</span>, <span >
-      Erci Xu</span>, <span >
-      Tingting Yu</span>, <span >
-      Yue Yu</span>, <span >
-      Ji Wang</span>, <span >
-      Xiangke Liao</span>
-  </span>
-  (2020).
-  <a href="/publication/ase20/">CP-Detector: Using Configuration-related Performance Properties to Expose Performance Bugs</a>.
-  In <em>ASE'20 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/ase20/ASE20.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/ase20/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2020">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Zhe Yang</span>, <span >
-      Youyou Lu</span>, <span >
-      Erci Xu</span>, <span >
-      Jiwu Shu</span>
-  </span>
-  (2020).
-  <a href="/publication/dac20/">CoinPurse: A Device-Assisted File System with Dual Interfaces</a>.
-  In <em>DAC'20 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/dac20/DAC20.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/dac20/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2019">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Erci Xu</span>, <span >
-      Mai Zheng</span>, <span >
-      Feng Qin</span>, <span >
-      Yikang Xu</span>, <span >
-      Jiesheng Wu</span>
-  </span>
-  (2019).
-  <a href="/publication/atc19/">Lessons and Actions: What We Learned from 10K SSD-Related Storage System Failures</a>.
-  In <em>ATC'19 (CCF-A)</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/atc19/ATC19.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/atc19/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2018">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Erci Xu</span>, <span >
-      Mai Zheng</span>, <span >
-      Feng Qin</span>, <span >
-      Jiesheng Wu</span>, <span >
-      Yikang Xu</span>
-  </span>
-  (2018).
-  <a href="/publication/sc18/">Understanding SSD Reliability in Large-Scale Cloud Systems</a>.
-  In <em>PDSW-DISCS@SC'18</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="/publication/sc18/SC18.pdf" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-<a href="#" class="btn btn-outline-primary btn-page-header btn-sm js-cite-modal"
-        data-filename="/publication/sc18/cite.bib">
-  Cite
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-
-        
-          
-        
-
-        <div class="grid-sizer col-lg-12 isotope-item pubtype-1 year-2016">
-          
-            
-
-<div class="pub-list-item" style="margin-bottom: 1rem">
-  <i class="far fa-file-alt pub-icon" aria-hidden="true"></i>
-
-  
-  
-
-  <span class="article-metadata li-cite-author">
-    
-
-  <span >
-      Erci Xu</span>, <span >
-      Mohit Saxena</span>, <span >
-      Lawrence Chiu</span>
-  </span>
-  (2016).
-  <a href="/publication/hotstorage16/">Neutrino: Revisiting Memory Caching for Iterative Data Analytics</a>.
-  In <em>Hotstorage'16</em>.
-  
-  <p>
-
-
-
-
-
-
-
-
-  
-    
-  
-
-
-
-<a class="btn btn-outline-primary btn-page-header btn-sm" href="https://www.usenix.org/conference/hotstorage16/workshop-program/presentation/xu" target="_blank" rel="noopener">
-  PDF
-</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-
-  
-  
-</div>
-
-          
-        </div>
-
-        
-      </div>
-
-    </div>
-  </div>
-</div>
-  </div>
-
-  <div class="page-footer">
-    
-    
     <div class="container">
-      <footer class="site-footer">
-
-  
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-
-
-
-
-
-  <p class="powered-by">
-    
-    
-    
-      
-      
-      
-      
-      
-      
-      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
-    
-  </p>
-</footer>
-
-    </div>
-    
-  </div>
-
-  
-<div id="modal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Cite</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <pre><code class="tex hljs"></code></pre>
-      </div>
-      <div class="modal-footer">
-        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
-          <i class="fas fa-copy"></i> Copy
-        </a>
-        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
-          <i class="fas fa-download"></i> Download
-        </a>
-        <div id="modal-error"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      
-
-    
-    <script src="/js/vendor-bundle.min.9592335d574f7a97010f99b90ad0f310.js"></script>
-
-    
-    
-    
-      
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      
-
-      
-      
-
-      
-
-      
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+<body>
+    <h1>Publications</h1>
+    <ul>
         
+            <li>
+                <strong>Ransom Access Memories: Achieving Practical Ransomware Protection in Cloud with DeftPunk</strong>
+                
+                by  
+                
+                Zhongyu Wang,
+                
+                 
+                
+                Yaheng Song,
+                
+                 
+                
+                <strong>Erci Xu (Corresponding)</strong>, 
+                
+                 
+                
+                Haonan Wu,
+                
+                 
+                
+                Guangxun Tong,
+                
+                 
+                
+                Haoran Li,
+                
+                 
+                
+                Jincheng Liu,
+                
+                 
+                
+                Lijun Ding,
+                
+                 
+                
+                Rong Liu,
+                
+                 
+                
+                Jiaji Zhu,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                <em>18th USENIX Symposium on Operating Systems Design and Implementation</em>, OSDI&#39;24 (CCF-A).
+                <ul>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
         
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+            <li>
+                <strong>CSAL: the Next-Gen Local Disks for the Cloud</strong>
+                
+                by  
+                
+                Yanbo Zhou,
+                
+                 
+                
+                <strong>Erci Xu (Corresponding)</strong>, 
+                
+                 
+                
+                Li Zhang,
+                
+                 
+                
+                Kapil Karkra,
+                
+                 
+                
+                Mariusz Barczak,
+                
+                 
+                
+                Wayne Gao,
+                
+                 
+                
+                Wojciech Malikowski,
+                
+                 
+                
+                Mateusz Kozlowski,
+                
+                 
+                
+                Łukasz Łasek ,
+                
+                 
+                
+                Ruiming Lu,
+                
+                 
+                
+                Feng Yang,
+                
+                 
+                
+                Lilong Huang,
+                
+                 
+                
+                Xiaolu Zhang,
+                
+                 
+                
+                Wenrui Li,
+                
+                 
+                
+                Jinhu Li,
+                
+                 
+                
+                Keqiang Niu,
+                
+                 
+                
+                Jiaji Zhu,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                <em>19th ACM European Conference on Computer Systems</em>, Eurosys&#39;24 (CCF-A).
+                <ul>
+                     
+                        <a href="https://dl.acm.org/doi/10.1145/3627703.3629566" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
         
-      
-
-    
-
-    
-    
-    
-
-    
-    
-
-    
-    
-    
-      
-      <script id="search-hit-fuse-template" type="text/x-template">
-        <div class="search-hit" id="summary-{{key}}">
-          <div class="search-hit-content">
-            <div class="search-hit-name">
-              <a href="{{relpermalink}}">{{title}}</a>
-              <div class="article-metadata search-hit-type">{{type}}</div>
-              <p class="search-hit-description">{{snippet}}</p>
-            </div>
-          </div>
-        </div>
-      </script>
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-      
-    
-
-    
-    
-
-    
-    
-    
-    
-
-    
-    
-      
-      
-      
-      
-      
-      
-      
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-      
-      
-    
-    
-    <script src="/en/js/wowchemy.min.2cc80485e7b9001edba5cdf5b39a1f97.js"></script>
-
-    
-
-
-
-
-
-
+            <li>
+                <strong>What&#39;s the Story in EBS Glory: Evolutions and Lessons in Building Cloud Block Store</strong>
+                
+                    <span class="btn btn-sm btn-danger disabled">Best Paper Award</span>
+                
+                by  
+                
+                Weidong Zhang,
+                
+                 
+                
+                <strong>Erci Xu (Corresponding)</strong>, 
+                
+                 
+                
+                Qiuping Wang,
+                
+                 
+                
+                Xiaolu Zhang,
+                
+                 
+                
+                Yuesheng Gu,
+                
+                 
+                
+                Zhenwei Lu,
+                
+                 
+                
+                Tao Ouyang,
+                
+                 
+                
+                Guanqun Dai,
+                
+                 
+                
+                Wenwen Peng,
+                
+                 
+                
+                Zhe Xu,
+                
+                 
+                
+                Shuo Zhang,
+                
+                 
+                
+                Dong Wu,
+                
+                 
+                
+                Yilei Peng,
+                
+                 
+                
+                Tianyun Wang,
+                
+                 
+                
+                Haoming Zhang,
+                
+                 
+                
+                Jiasheng Wang,
+                
+                 
+                
+                Wenyuan Yan,
+                
+                 
+                
+                Yuanyuan Dong,
+                
+                 
+                
+                Wenhui Yao,
+                
+                 
+                
+                Zhongjie Wu,
+                
+                 
+                
+                Lingjun Zhu,
+                
+                 
+                
+                Chao Shi,
+                
+                 
+                
+                Yinhu Wang,
+                
+                 
+                
+                Rong Liu,
+                
+                 
+                
+                Junping Wu,
+                
+                 
+                
+                Jiaji Zhu,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                <em>22nd USENIX Conference on File and Storage Technologies.</em>, FAST&#39;24 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/system/files/fast24-zhang-weidong.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding</strong>
+                
+                by  
+                
+                Wenzhe Zhu,
+                
+                 
+                
+                Yongkun Li,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Fei Li,
+                
+                 
+                
+                Yinlong Xu,
+                
+                 
+                
+                John C.S. Lui,
+                
+                 
+                <em>2023 ACM SIGMETRICS</em>, SIGMETRICS&#39;23 (CCF-B).
+                <ul>
+                     
+                        <a href="https://dl.acm.org/doi/10.1145/3579444" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Deploying User-space TCP at Cloud Scale with LUNA</strong>
+                
+                by  
+                
+                Lingjun Zhu,
+                
+                 
+                
+                Yifan Shen,
+                
+                 
+                
+                <strong>Erci Xu (Corresponding)</strong>, 
+                
+                 
+                
+                Bo Shi,
+                
+                 
+                
+                Ting Fu,
+                
+                 
+                
+                Shu Ma,
+                
+                 
+                
+                Shuguang Chen,
+                
+                 
+                
+                Zhongyu Wang,
+                
+                 
+                
+                Haonan Wu,
+                
+                 
+                
+                Zhendan Yang,
+                
+                 
+                
+                Xingyu Liao,
+                
+                 
+                
+                Wei Lin,
+                
+                 
+                
+                Yijun Hou,
+                
+                 
+                
+                Rong Liu,
+                
+                 
+                
+                Chao Shi,
+                
+                 
+                
+                Jiaji Zhu,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                <em>2023 USENIX Annual Technical Conference</em>, ATC&#39;23 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/system/files/atc23-zhu-lingjun.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                     
+                        <a href="https://www.usenix.org/system/files/atc23_slides_zhu-lingjun.pdf" class="btn btn-sm btn-outline-success" target="_blank">Slides</a>
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems</strong>
+                
+                    <span class="btn btn-sm btn-danger disabled">Best Paper Award</span>
+                
+                by  
+                
+                Ruiming Lu,
+                
+                 
+                
+                <strong>Erci Xu (co-first)</strong>, 
+                
+                 
+                
+                Yiming Zhang,
+                
+                 
+                
+                Fengyi Zhu,
+                
+                 
+                
+                Zhaosheng Zhu,
+                
+                 
+                
+                Mengtian Wang,
+                
+                 
+                
+                Zongpeng Zhu,
+                
+                 
+                
+                Guangtao Xue,
+                
+                 
+                
+                Jiwu Shu,
+                
+                 
+                
+                Minglu Li,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                <em>21st USENIX Conference on File and Storage Technologies.</em>, FAST&#39;23 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/system/files/fast23-lu.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                     
+                        <a href="https://www.youtube.com/watch?v=DcDnrZY11Yw" class="btn btn-sm btn-outline-secondary" target="_blank">Video</a>
+                    
+                     
+                        <a href="fast23_slides_extended.pdf" class="btn btn-sm btn-outline-success" target="_blank">Slides</a>
+                    
+                    
+                     
+                        <a href="https://tianchi.aliyun.com/dataset/144479?lang=en-us" class="btn btn-sm btn-outline-info" target="_blank">Dataset</a>
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives</strong>
+                
+                by  
+                
+                Su Zhou,
+                
+                 
+                
+                <strong>Erci Xu (corresponding)</strong>, 
+                
+                 
+                
+                Hao Wu,
+                
+                 
+                
+                Yu Du,
+                
+                 
+                
+                Jiacheng Cui,
+                
+                 
+                
+                Wanyu Fu,
+                
+                 
+                
+                Chang Liu,
+                
+                 
+                
+                Yingni Wang,
+                
+                 
+                
+                Wenbo Wang,
+                
+                 
+                
+                Shouqu Sun,
+                
+                 
+                
+                Xianfei Wang,
+                
+                 
+                
+                Bo Feng,
+                
+                 
+                
+                Biyun Zhu,
+                
+                 
+                
+                Xin Tong,
+                
+                 
+                
+                Weikang Kong,
+                
+                 
+                
+                Linyan Liu,
+                
+                 
+                
+                Zhongjie Wu,
+                
+                 
+                
+                Jinbo Wu,
+                
+                 
+                
+                Qingchao Luo,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                <em>21st USENIX Conference on File and Storage Technologies.</em>, FAST&#39;23 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/system/files/fast23-zhou-su.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                     
+                        <a href="https://www.youtube.com/watch?v=b_iW94OQmbY" class="btn btn-sm btn-outline-secondary" target="_blank">Video</a>
+                    
+                     
+                        <a href="fast23_smrstore.pdf" class="btn btn-sm btn-outline-success" target="_blank">Slides</a>
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations</strong>
+                
+                by  
+                
+                Haochen He,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Shanshan Li,
+                
+                 
+                
+                Zhouyang Jia,
+                
+                 
+                
+                Si Zheng,
+                
+                 
+                
+                Yue Yu,
+                
+                 
+                
+                Jun Ma,
+                
+                 
+                
+                Xiangke Liao,
+                
+                 
+                <em>49th International Conference on Very Large Data Bases</em>, VLDB&#39;23 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.vldb.org/pvldb/vol16/p1712-he.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Understanding and Detecting On-the-Fly Configuration Bugs</strong>
+                
+                    <span class="btn btn-sm btn-danger disabled">Distinguished Paper Award</span>
+                
+                by  
+                
+                Teng Wang,
+                
+                 
+                
+                Zhouyang Jia,
+                
+                 
+                
+                Shanshan Li,
+                
+                 
+                
+                Si Zheng,
+                
+                 
+                
+                Yue Yu,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Shaoliang Peng,
+                
+                 
+                
+                Xiangke Liao,
+                
+                 
+                <em>45th IEEE/ACM International Conference on Software Engineering</em>, ICSE&#39;23 (CCF-A).
+                <ul>
+                     
+                        <a href="https://leopard-lab.github.io/paper/icse23-Parachute.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                     
+                        <a href="https://github.com/wangteng13/Parachute" class="btn btn-sm btn-outline-warning" target="_blank">Code</a>
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</strong>
+                
+                by  
+                
+                Ruiming Lu,
+                
+                 
+                
+                <strong>Erci Xu (co-first)</strong>, 
+                
+                 
+                
+                Yiming Zhang,
+                
+                 
+                
+                Zhaosheng Zhu,
+                
+                 
+                
+                Mengtian Wang,
+                
+                 
+                
+                Zongpeng Zhu,
+                
+                 
+                
+                Guangtao Xue,
+                
+                 
+                
+                Minglu Li,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                <em>2022 USENIX Annual Technical Conference</em>, ATC&#39;22 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/system/files/atc22-lu.pdfx" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                     
+                        <a href="https://youtu.be/wDS-CRyTDlA" class="btn btn-sm btn-outline-secondary" target="_blank">Video</a>
+                    
+                     
+                        <a href="https://www.usenix.org/sites/default/files/conference/protected-files/atc22_slides_lu.pdf" class="btn btn-sm btn-outline-success" target="_blank">Slides</a>
+                    
+                    
+                     
+                        <a href="https://tianchi.aliyun.com/dataset/128972" class="btn btn-sm btn-outline-info" target="_blank">Dataset</a>
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>imDedup: A Lossless Deduplication Scheme to Eliminate Fine-grained Redundancy among Images</strong>
+                
+                by  
+                
+                Cai Deng,
+                
+                 
+                
+                Qi Chen,
+                
+                 
+                
+                Xiangyu Zou,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Bo Tang,
+                
+                 
+                
+                Wen Xia,
+                
+                 
+                <em>38th IEEE International Conference on Data Engineering</em>, ICDE&#39;22 (CCF-A).
+                <ul>
+                     
+                        <a href="https://ieeexplore.ieee.org/document/9835287" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Challenges and Opportunities: an In-depth Empirical Study on Configuration Error Injection Testing</strong>
+                
+                by  
+                
+                Wang Li,
+                
+                 
+                
+                Zhouyang Jia,
+                
+                 
+                
+                Shanshan Li,
+                
+                 
+                
+                Yuanliang Zhang,
+                
+                 
+                
+                Teng Wang,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Ji Wang,
+                
+                 
+                
+                Xiangke Liao,
+                
+                 
+                <em>30th ACM SIGSOFT International Symposium on Software Testing and Analysis</em>, ISSTA&#39;21 (CCF-A).
+                <ul>
+                     
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3460319.3464799" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Max: A Multicore-Accelerated File System for Flash Storage</strong>
+                
+                by  
+                
+                Xiaojian Liao,
+                
+                 
+                
+                Youyou Lu,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Jiwu Shu,
+                
+                 
+                <em>2021 USENIX Annual Technical Conference</em>, ATC&#39;21 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/system/files/atc21-liao.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                     
+                        <a href="https://youtu.be/F6-0rFGHPSI" class="btn btn-sm btn-outline-secondary" target="_blank">Video</a>
+                    
+                     
+                        <a href="https://www.usenix.org/system/files/atc21_slides_liao_0.pdf" class="btn btn-sm btn-outline-success" target="_blank">Slides</a>
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Concordia: Distributed Shared Memory with In-network Cache Coherence</strong>
+                
+                by  
+                
+                Qing Wang,
+                
+                 
+                
+                Youyou Lu,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Junru Li,
+                
+                 
+                
+                Youmin Chen,
+                
+                 
+                
+                Jiwu Shu,
+                
+                 
+                <em>19th USENIX Conference on File and Storage Technologies.</em>, FAST&#39;21 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/system/files/fast21-wang.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                     
+                        <a href="https://youtu.be/9m4W13vTjxk" class="btn btn-sm btn-outline-secondary" target="_blank">Video</a>
+                    
+                     
+                        <a href="https://www.usenix.org/sites/default/files/conference/protected-files/fast21_slides_wang.pdf" class="btn btn-sm btn-outline-success" target="_blank">Slides</a>
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>DepOwl: Detecting Dependency Bugs to Prevent Compatibility Failures</strong>
+                
+                by  
+                
+                Zhouyang Jia,
+                
+                 
+                
+                Shanshan Li,
+                
+                 
+                
+                Tingting Yu,
+                
+                 
+                
+                Zeng Chen,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Xiaodong Liu,
+                
+                 
+                
+                Ji Wang,
+                
+                 
+                
+                Xiangke Liao,
+                
+                 
+                <em>43rd IEEE/ACM International Conference on Software Engineering</em>, ICSE&#39;21 (CCF-A).
+                <ul>
+                     
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9402138" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Write Dependency Disentanglement with HORAE</strong>
+                
+                by  
+                
+                Xiaojian Liao,
+                
+                 
+                
+                Youyou Lu,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Jiwu Shu,
+                
+                 
+                <em>14th USENIX Symposium on Operating Systems Design and Implementation</em>, OSDI&#39;20 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/system/files/osdi20-liao.pdf" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                     
+                        <a href="https://youtu.be/PoHZ84DVvbk" class="btn btn-sm btn-outline-secondary" target="_blank">Video</a>
+                    
+                     
+                        <a href="https://www.usenix.org/sites/default/files/conference/protected-files/osdi20_slides_liao.pdf" class="btn btn-sm btn-outline-success" target="_blank">Slides</a>
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>CP-Detector: Using Configuration-related Performance Properties to Expose Performance Bugs</strong>
+                
+                by  
+                
+                Haochen He,
+                
+                 
+                
+                Zhouyang Jia,
+                
+                 
+                
+                Shanshan Li,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Tingting Yu,
+                
+                 
+                
+                Yue Yu,
+                
+                 
+                
+                Ji Wang,
+                
+                 
+                
+                Xiangke Liao,
+                
+                 
+                <em>35th IEEE/ACM International Conference on Automated Software Engineering</em>, ASE&#39;20 (CCF-A).
+                <ul>
+                     
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9286052" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>CoinPurse: A Device-Assisted File System with Dual Interfaces</strong>
+                
+                by  
+                
+                Zhe Yang,
+                
+                 
+                
+                Youyou Lu,
+                
+                 
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Jiwu Shu,
+                
+                 
+                <em>57th ACM/IEEE Design Automation Conference</em>, DAC&#39;20 (CCF-A).
+                <ul>
+                     
+                        <a href="https://ieeexplore.ieee.org/abstract/document/9218679" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Lessons and Actions: What We Learned from 10K SSD-Related Storage System Failures</strong>
+                
+                by  
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Mai Zheng,
+                
+                 
+                
+                Feng Qin,
+                
+                 
+                
+                Yikang Xu,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                <em>2019 USENIX Annual Technical Conference</em>, ATC&#39;19 (CCF-A).
+                <ul>
+                     
+                        <a href="https://www.usenix.org/conference/atc19/presentation/xu" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Understanding SSD Reliability in Large-Scale Cloud Systems</strong>
+                
+                by  
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Mai Zheng,
+                
+                 
+                
+                Feng Qin,
+                
+                 
+                
+                Jiesheng Wu,
+                
+                 
+                
+                Yikang Xu,
+                
+                 
+                <em>3rd IEEE/ACM International Workshop on Parallel Data Storage &amp; Data Intensive Scalable Computing Systems</em>, PDSW-DISCS&#39;18.
+                <ul>
+                     
+                        <a href="https://ieeexplore.ieee.org/document/8638427" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+            <li>
+                <strong>Neutrino: Revisiting Memory Caching for Iterative Data Analytics</strong>
+                
+                by  
+                
+                <strong>Erci Xu</strong>, 
+                
+                 
+                
+                Mohit Saxena,
+                
+                 
+                
+                Lawrence Chiu,
+                
+                 
+                <em>8th USENIX Workshop on Hot Topics in Storage and File Systems</em>, HotStorage&#39;16.
+                <ul>
+                     
+                        <a href="https://www.usenix.org/conference/hotstorage16/workshop-program/presentation/xu" class="btn btn-sm btn-outline-primary" target="_blank">PDF</a>
+                    
+                    
+                    
+                    
+                    
+                </ul> 
+            </li>
+        
+    </ul>
 </body>
-</html>
+
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="text-muted">© 2024 G(E)X; All Rights Reserved!</span>
+            </div>
+            <div class="col-md-4 justify-content-end d-flex">
+                <a href="https://twitter.com/giorgioercixu" class="me-2 text-muted"><i class="fab fa-twitter"></i></a>
+                <a href="https://scholar.google.com/citations?user=7Yc6A1QAAAAJ" class="me-2 text-muted"><i class="fab fa-google"></i></a>
+            </div>
+        </footer>
+    </div>
+
+    
+    <!-- Optional JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    
+    
+</body>
