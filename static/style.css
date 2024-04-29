@@ -1,0 +1,121 @@
+body.dark-theme {
+    background-color: #002b36; /* base03 in Solarized */
+    color: #839496; /* base0 in Solarized */
+}
+
+body.dark-theme a {
+    color: #268bd2; /* blue in Solarized */
+}
+
+body.dark-theme .navbar,
+body.dark-theme footer {
+    background-color: #073642; /* base02 in Solarized */
+}
+
+body.dark-theme h1, body.dark-theme h2, body.dark-theme h3 {
+    color: #93a1a1; /* base1 in Solarized */
+}
+
+body.dark-theme .card {
+    background-color: #073642; /* Solarized base02, darker background for dark mode */
+    color: #839496; /* Solarized base0, softer text color for dark mode */
+}
+
+body.dark-theme .card .btn {
+    background-color: #586e75; /* Solarized base01 */
+    color: #eee8d5; /* Solarized base2 */
+}
+
+body.dark-theme .card a {
+    color: #268bd2; /* Solarized blue for links */
+}
+
+.card {
+    background-color: #eee8d5; /* Solarized base2, lighter background for light mode */
+    color: #657b83; /* Solarized base00, primary text color for light mode */
+}
+
+.card .btn {
+    background-color: #fdf6e3; /* Solarized base3 */
+    color: #586e75; /* Solarized base01 */
+}
+
+.card a {
+    color: #268bd2; /* Solarized blue for links */
+}
+body.dark-theme footer {
+    background-color: #073642; /* Solarized base02, a darker background suitable for dark mode */
+    color: #839496; /* Solarized base0, a lighter text color for dark mode */
+}
+
+body.dark-theme footer a,
+body.dark-theme footer .text-muted {
+    color: #93a1a1; /* Solarized base1, slightly lighter text color for links and muted text */
+}
+
+footer {
+    background-color: #eee8d5; /* Solarized base2, a lighter background suitable for light mode */
+    color: #657b83; /* Solarized base00, primary text color for light mode */
+}
+
+footer a,
+footer .text-muted {
+    color: #586e75; /* Solarized base01, slightly darker text color for links and muted text */
+}
+
+
+
+body, html {
+    background-color: #fdf6e3; /* base3 in Solarized */
+    color: #657b83; /* base00 in Solarized */
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #268bd2; /* blue in Solarized */
+}
+
+.navbar,
+footer {
+    background-color: #eee8d5; /* base2 in Solarized */
+}
+
+h1, h2, h3 {
+    color: #586e75; /* base01 in Solarized */
+    font-family: 'Merriweather', serif;
+}
+
+/* Responsive text sizing using media queries */
+@media (max-width: 768px) {
+    body, html {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    .lead, p, li {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2, h3 {
+        font-size: 30px;
+    }
+
+    .lead, p, li {
+        font-size: 16px;
+    }
+}

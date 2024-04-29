@@ -1,127 +1,23 @@
 
 <head>
     
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
-    <style>
-        body, html {
-            font-size: 16px; /* Base font size */
-            line-height: 1.6; /* Adequate line spacing for readability */
-        }
-    
-        /* Responsive text sizing using media queries */
-        @media (max-width: 768px) {
-            body, html {
-                font-size: 18px; /* Larger text on small devices */
-            }
-    
-            h2, h3 {
-                font-size: 1.25rem; /* Adjust heading sizes for mobile */
-            }
-    
-            .lead {
-                font-size: 1.1rem; /* Slightly larger paragraph text */
-            }
-        }
-    </style>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">  <!-- Link to your main.css file -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-<style>
-    body, h1, h2, h3, p, li {
-        font-family: 'Roboto', sans-serif; /* Default font */
-    }
-
-    h1, h2, h3 {
-        font-family: 'Merriweather', serif; /* Font for headings */
-    }
-
-    @media (max-width: 768px) {
-        body {
-            font-size: 16px; /* Larger base font size for readability */
-        }
-
-        h1 {
-            font-size: 24px; /* Larger font size for main titles */
-        }
-
-        h2, h3 {
-            font-size: 20px; /* Larger font size for section headings */
-        }
-
-        .lead, p, .list-unstyled li, .media-body {
-            font-size: 18px; /* Larger text for better readability */
-        }
-
-        .navbar-brand, .navbar-nav .nav-link {
-            font-size: 18px; /* Larger navigation links */
-        }
-    }
-
-    /* Additional styling for larger screens */
-    @media (min-width: 769px) {
-        body {
-            font-size: 14px; /* Standard font size for desktop */
-        }
-
-        h1 {
-            font-size: 36px; /* Larger font size for main titles */
-        }
-
-        h2, h3 {
-            font-size: 30px; /* Larger font size for section headings */
-        }
-
-        .lead, p, .list-unstyled li, .media-body {
-            font-size: 16px; /* Standard text size */
-        }
-    }
-</style>
-
+    
 </head>
+
 <body>
-<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
-<!--        <a class="navbar-brand" href="#">Giorgio (Erci) Xu</a> -->
-<!--        <div class="navbar-nav mr-auto"> -->
-<!--            
-    
-    
-    <a class="nav-item nav-link active" aria-current="page"
-       href="/">
-        Home 
-    </a>
-    
- -->
-<!--            
-    
-    
-    <a class="nav-item nav-link"
-       href="/publication/">
-        Publication 
-    </a>
-    
- -->
-<!--            
-    
-    
-    <a class="nav-item nav-link"
-       href="/posts/">
-        Post 
-    </a>
-    
- -->
-<!--        </div> -->
-<!--    </nav> -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#">Giorgio (Erci) Xu</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav me-auto">  <!-- Changed from mr-auto to me-auto for left alignment -->
                     
     
     
@@ -150,6 +46,8 @@
     
 
                 </ul>
+                <!-- Button positioned to the right -->
+                <button id="theme-toggle" class="btn btn-sm btn-outline-light ms-auto">Dark Mode</button>
             </div>
         </nav>
 
@@ -164,7 +62,7 @@
             <!-- Bio section -->
             <h2 class="fs-3">Short Bio</h2>
             <p class="lead">
-                Erci Xu is a storage researcher who mostly focuses on distributed storage systems and software/hardware reliability. He has published multiple paper at top venues including USENIX OSDI, FAST, ATC and ACM Eurosys. He is the recipient of two USENIX FAST Best Paper Awards
+                Erci Xu is a storage researcher who mostly focuses on distributed storage systems and software/hardware reliability. He has published multiple paper at top venues including USENIX OSDI, FAST, ATC and ACM Eurosys. Most (conferrence only) of his publications are listed <a href="./publication/" target="_blank" rel="noopener"> here</a>. He is the recipient of two USENIX FAST Best Paper Awards
                 <a href="https://www.usenix.org/conference/fast23/presentation/lu" target="_blank" rel="noopener">FAST'23</a>, <a href="https://www.usenix.org/conference/fast24/presentation/zhang-weidong" target="_blank" rel="noopener">FAST'24</a>, and ACM SIGOPS China <a href="https://www.sigops.org/2024/the-25th-chinasys-workshop" target="_blank" rel="noopener">Rising Star Award</a>.    
                 In his spare time, Erci enjoys reading and reviewing books on <a href="https://www.goodreads.com/user/show/24628220-giorgio" target="_blank" rel="noopener">Goodreads</a>. Some of the reviews (mostly in Chinese) are also posted <a href="./posts/" target="_blank" rel="noopener"> here</a>.
             </p>
@@ -256,6 +154,46 @@
     <!-- Optional JavaScript -->
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-    
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const body = document.body;
+                const themeToggle = document.getElementById('theme-toggle');
+                const storedTheme = localStorage.getItem('theme'); // get the stored theme
+                let hour = new Date().getHours(); // get the current hour
+        
+                function setThemeBasedOnTime() {
+                    if (hour >= 19 || hour < 6) {
+                        body.classList.add('dark-theme');
+                        themeToggle.textContent = 'Light Mode';
+                        localStorage.setItem('theme', 'dark-theme');
+                    } else {
+                        body.classList.remove('dark-theme');
+                        themeToggle.textContent = 'Dark Mode';
+                        localStorage.setItem('theme', 'light-theme');
+                    }
+                }
+        
+                // Apply the stored theme; if none stored, set based on time
+                if (storedTheme) {
+                    body.classList.add(storedTheme);
+                    themeToggle.textContent = storedTheme === 'dark-theme' ? 'Light Mode' : 'Dark Mode';
+                } else {
+                    setThemeBasedOnTime();
+                }
+        
+                themeToggle.addEventListener('click', function () {
+                    body.classList.toggle('dark-theme');
+        
+                    if (body.classList.contains('dark-theme')) {
+                        localStorage.setItem('theme', 'dark-theme');
+                        themeToggle.textContent = 'Light Mode';
+                    } else {
+                        localStorage.setItem('theme', 'light-theme');
+                        themeToggle.textContent = 'Dark Mode';
+                    }
+                });
+            });
+        </script>
+        
     
 </body>
