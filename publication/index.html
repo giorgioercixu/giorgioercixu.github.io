@@ -1,16 +1,96 @@
 
 <head>
     
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
+    <style>
+        body, html {
+            font-size: 16px; /* Base font size */
+            line-height: 1.6; /* Adequate line spacing for readability */
+        }
+    
+        /* Responsive text sizing using media queries */
+        @media (max-width: 768px) {
+            body, html {
+                font-size: 18px; /* Larger text on small devices */
+            }
+    
+            h2, h3 {
+                font-size: 1.25rem; /* Adjust heading sizes for mobile */
+            }
+    
+            .lead {
+                font-size: 1.1rem; /* Slightly larger paragraph text */
+            }
+        }
+    </style>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+    h1 {
+        font-family: 'Merriweather', serif; /* Consistent with other headings */
+        font-size: 32px; /* Larger size for desktop, adjust if needed */
+    }
+    li {
+        margin-bottom: 10px; /* Add spacing between items */
+    }
+    @media (max-width: 768px) {
+        h1 {
+            font-size: 28px; /* Slightly smaller on mobile for better fit */
+        }
+        .btn-sm { /* Increase button size for better mobile interaction */
+            padding: 0.5rem 1rem;
+            font-size: 16px;
+        }
+    }
+</style>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Giorgio (Erci) Xu</a>
-        <div class="navbar-nav mr-auto">
-            
+<!--    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> -->
+<!--        <a class="navbar-brand" href="#">Giorgio (Erci) Xu</a> -->
+<!--        <div class="navbar-nav mr-auto"> -->
+<!--            
+    
+    
+    <a class="nav-item nav-link"
+       href="/">
+        Home 
+    </a>
+    
+ -->
+<!--            
+    
+    
+    <a class="nav-item nav-link active" aria-current="page"
+       href="/publication/">
+        Publication 
+    </a>
+    
+ -->
+<!--            
+    
+    
+    <a class="nav-item nav-link"
+       href="/posts/">
+        Post 
+    </a>
+    
+ -->
+<!--        </div> -->
+<!--    </nav> -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Giorgio (Erci) Xu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    
     
     
     <a class="nav-item nav-link"
@@ -19,7 +99,7 @@
     </a>
     
 
-            
+                    
     
     
     <a class="nav-item nav-link active" aria-current="page"
@@ -28,7 +108,7 @@
     </a>
     
 
-            
+                    
     
     
     <a class="nav-item nav-link"
@@ -37,8 +117,9 @@
     </a>
     
 
-        </div>
-    </nav>
+                </ul>
+            </div>
+        </nav>
 
     <div class="container">
         
@@ -47,6 +128,7 @@
     <ul>
         
             <li>
+                <span>1.</span> <!-- Number each publication -->
                 <strong>Ransom Access Memories: Achieving Practical Ransomware Protection in Cloud with DeftPunk</strong>
                 
                 by  
@@ -105,6 +187,7 @@
             </li>
         
             <li>
+                <span>2.</span> <!-- Number each publication -->
                 <strong>CSAL: the Next-Gen Local Disks for the Cloud</strong>
                 
                 by  
@@ -193,6 +276,7 @@
             </li>
         
             <li>
+                <span>3.</span> <!-- Number each publication -->
                 <strong>What&#39;s the Story in EBS Glory: Evolutions and Lessons in Building Cloud Block Store</strong>
                 
                     <span class="btn btn-sm btn-danger disabled">Best Paper Award</span>
@@ -319,6 +403,7 @@
             </li>
         
             <li>
+                <span>4.</span> <!-- Number each publication -->
                 <strong>DiffForward: On Balancing Forwarding Traffic for Modern Cloud Block Services via Differentiated Forwarding</strong>
                 
                 by  
@@ -359,6 +444,7 @@
             </li>
         
             <li>
+                <span>5.</span> <!-- Number each publication -->
                 <strong>Deploying User-space TCP at Cloud Scale with LUNA</strong>
                 
                 by  
@@ -445,6 +531,7 @@
             </li>
         
             <li>
+                <span>6.</span> <!-- Number each publication -->
                 <strong>Perseus: A Fail-Slow Detection Framework for Cloud Storage Systems</strong>
                 
                     <span class="btn btn-sm btn-danger disabled">Best Paper Award</span>
@@ -513,6 +600,7 @@
             </li>
         
             <li>
+                <span>7.</span> <!-- Number each publication -->
                 <strong>SMRSTORE: A Storage Engine for Cloud Object Storage on HM-SMR Drives</strong>
                 
                 by  
@@ -613,6 +701,7 @@
             </li>
         
             <li>
+                <span>8.</span> <!-- Number each publication -->
                 <strong>When Database Meets New Storage Devices: Understanding and Exposing Performance Mismatches via Configurations</strong>
                 
                 by  
@@ -661,6 +750,7 @@
             </li>
         
             <li>
+                <span>9.</span> <!-- Number each publication -->
                 <strong>Understanding and Detecting On-the-Fly Configuration Bugs</strong>
                 
                     <span class="btn btn-sm btn-danger disabled">Distinguished Paper Award</span>
@@ -713,6 +803,7 @@
             </li>
         
             <li>
+                <span>10.</span> <!-- Number each publication -->
                 <strong>NVMe SSD Failures in the Field: the Fail-Stop and the Fail-Slow</strong>
                 
                 by  
@@ -771,6 +862,7 @@
             </li>
         
             <li>
+                <span>11.</span> <!-- Number each publication -->
                 <strong>imDedup: A Lossless Deduplication Scheme to Eliminate Fine-grained Redundancy among Images</strong>
                 
                 by  
@@ -811,6 +903,7 @@
             </li>
         
             <li>
+                <span>12.</span> <!-- Number each publication -->
                 <strong>Challenges and Opportunities: an In-depth Empirical Study on Configuration Error Injection Testing</strong>
                 
                 by  
@@ -859,6 +952,7 @@
             </li>
         
             <li>
+                <span>13.</span> <!-- Number each publication -->
                 <strong>Max: A Multicore-Accelerated File System for Flash Storage</strong>
                 
                 by  
@@ -895,6 +989,7 @@
             </li>
         
             <li>
+                <span>14.</span> <!-- Number each publication -->
                 <strong>Concordia: Distributed Shared Memory with In-network Cache Coherence</strong>
                 
                 by  
@@ -939,6 +1034,7 @@
             </li>
         
             <li>
+                <span>15.</span> <!-- Number each publication -->
                 <strong>DepOwl: Detecting Dependency Bugs to Prevent Compatibility Failures</strong>
                 
                 by  
@@ -987,6 +1083,7 @@
             </li>
         
             <li>
+                <span>16.</span> <!-- Number each publication -->
                 <strong>Write Dependency Disentanglement with HORAE</strong>
                 
                 by  
@@ -1023,6 +1120,7 @@
             </li>
         
             <li>
+                <span>17.</span> <!-- Number each publication -->
                 <strong>CP-Detector: Using Configuration-related Performance Properties to Expose Performance Bugs</strong>
                 
                 by  
@@ -1071,6 +1169,7 @@
             </li>
         
             <li>
+                <span>18.</span> <!-- Number each publication -->
                 <strong>CoinPurse: A Device-Assisted File System with Dual Interfaces</strong>
                 
                 by  
@@ -1103,6 +1202,7 @@
             </li>
         
             <li>
+                <span>19.</span> <!-- Number each publication -->
                 <strong>Lessons and Actions: What We Learned from 10K SSD-Related Storage System Failures</strong>
                 
                 by  
@@ -1139,6 +1239,7 @@
             </li>
         
             <li>
+                <span>20.</span> <!-- Number each publication -->
                 <strong>Understanding SSD Reliability in Large-Scale Cloud Systems</strong>
                 
                 by  
@@ -1175,6 +1276,7 @@
             </li>
         
             <li>
+                <span>21.</span> <!-- Number each publication -->
                 <strong>Neutrino: Revisiting Memory Caching for Iterative Data Analytics</strong>
                 
                 by  
