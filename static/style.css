@@ -119,3 +119,59 @@ h1, h2, h3 {
         font-size: 16px;
     }
 }
+
+/* Accordion Theme Matching */
+.accordion-item {
+    background-color: #eee8d5; /* Solarized base2 for light mode */
+    border-color: #93a1a1; /* Solarized base1 for border */
+}
+
+.accordion-button {
+    background-color: #fdf6e3; /* Solarized base3 for light mode */
+    color: #586e75; /* Solarized base01 for text */
+    border-color: #93a1a1; /* Solarized base1 for border */
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #eee8d5; /* Solarized base2 when expanded */
+    color: #002b36; /* Solarized base03 for contrast */
+    border-color: #93a1a1;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(38, 139, 210, 0.25); /* Solarized blue focus */
+    border-color: #268bd2;
+}
+
+.accordion-body {
+    background-color: #fdf6e3; /* Solarized base3 */
+    color: #657b83; /* Solarized base00 */
+}
+
+/* Dark theme accordion styles */
+body.dark-theme .accordion-item {
+    background-color: #073642; /* Solarized base02 for dark mode */
+    border-color: #586e75; /* Solarized base01 for border */
+}
+
+body.dark-theme .accordion-button {
+    background-color: #002b36; /* Solarized base03 for dark mode */
+    color: #839496; /* Solarized base0 for text */
+    border-color: #586e75; /* Solarized base01 for border */
+}
+
+body.dark-theme .accordion-button:not(.collapsed) {
+    background-color: #073642; /* Solarized base02 when expanded */
+    color: #93a1a1; /* Solarized base1 for contrast */
+    border-color: #586e75;
+}
+
+body.dark-theme .accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(38, 139, 210, 0.25); /* Solarized blue focus */
+    border-color: #268bd2;
+}
+
+body.dark-theme .accordion-body {
+    background-color: #002b36; /* Solarized base03 */
+    color: #839496; /* Solarized base0 */
+}

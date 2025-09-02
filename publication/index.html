@@ -2,6 +2,9 @@
 <head>
     
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Preconnect to Apple Music for faster loading -->
+    <link rel="preconnect" href="https://embed.music.apple.com">
+    <link rel="dns-prefetch" href="https://embed.music.apple.com">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/static/style.css">  <!-- Link to your main.css file -->
@@ -1296,16 +1299,20 @@
             
                 
                 
+                    <span class="co-first">*</span>
                 
                 
-                    Ruiming Lu, 
+                
+                    Ruiming Lu , 
                 
             
                 
                 
+                    <span class="co-first">*</span>
                 
                 
-                    <strong>Erci Xu (co-first)</strong>, 
+                
+                    <strong>Erci Xu </strong>, 
                 
             
                 
@@ -1739,16 +1746,20 @@
             
                 
                 
+                    <span class="co-first">*</span>
                 
                 
-                    Ruiming Lu, 
+                
+                    Ruiming Lu , 
                 
             
                 
                 
+                    <span class="co-first">*</span>
                 
                 
-                    <strong>Erci Xu (co-first)</strong>, 
+                
+                    <strong>Erci Xu </strong>, 
                 
             
                 
@@ -1804,7 +1815,7 @@
             <em>2022 USENIX Annual Technical Conference</em>, ATC&#39;22 (CCF-A).
             <br>
              
-                <a href="https://www.usenix.org/system/files/atc22-lu.pdfx" class="btn btn-sm btn-outline-primary me-1 mt-1" target="_blank">PDF</a>
+                <a href="https://www.usenix.org/system/files/atc22-lu.pdf" class="btn btn-sm btn-outline-primary me-1 mt-1" target="_blank">PDF</a>
             
              
                 <a href="https://youtu.be/wDS-CRyTDlA" class="btn btn-sm btn-outline-secondary me-1 mt-1" target="_blank">Video</a>
@@ -2571,28 +2582,64 @@
 }
 
 .year-header {
-    color: #2563eb;
-    border-bottom: 2px solid #1d4ed8;
+    color: #268bd2; /* Solarized blue */
+    border-bottom: 2px solid #268bd2;
     padding-bottom: 0.5rem;
 }
 
+body.dark-theme .year-header {
+    color: #268bd2;
+    border-bottom-color: #268bd2;
+}
+
 .co-first {
-    color: #e74c3c;
+    color: #dc322f; /* Solarized red */
     font-weight: bold;
     font-size: 1.1em;
 }
 
 .corresponding {
-    color: #2ecc71;
+    color: #859900; /* Solarized green */
     font-weight: bold;
     font-size: 1.1em;
+}
+
+/* Fix text-muted visibility */
+.text-muted {
+    color: #93a1a1 !important; /* Solarized base1 for light mode */
+}
+
+body.dark-theme .text-muted {
+    color: #586e75 !important; /* Solarized base01 for dark mode */
+}
+
+/* Ensure publication text is visible */
+.publication-list-global li {
+    color: #657b83; /* Solarized base00 for light mode */
+}
+
+body.dark-theme .publication-list-global li {
+    color: #839496; /* Solarized base0 for dark mode */
+}
+
+/* Conference name styling */
+em {
+    color: #586e75; /* Solarized base01 for light mode */
+}
+
+body.dark-theme em {
+    color: #93a1a1; /* Solarized base1 for dark mode */
 }
 
 hr {
     border: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent, var(--bs-secondary), transparent);
+    background: linear-gradient(90deg, transparent, #93a1a1, transparent);
     margin: 2rem 0;
+}
+
+body.dark-theme hr {
+    background: linear-gradient(90deg, transparent, #586e75, transparent);
 }
 </style>
 
