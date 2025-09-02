@@ -83,6 +83,28 @@
     <!-- Goodreads Widget -->
 <!-- Show static HTML/CSS as a placeholder in case js is not enabled - javascript include will override this if things work -->
 <style type="text/css" media="screen">
+  /* Theme-aware styling for Goodreads widget */
+  body.dark-theme .gr_custom_container_ {
+    background-color: #073642 !important;
+    color: #839496 !important;
+    border-color: #586e75 !important;
+  }
+  body.dark-theme .gr_custom_header_ {
+    border-bottom-color: #586e75 !important;
+    color: #93a1a1 !important;
+  }
+  body.dark-theme .gr_custom_header_ a {
+    color: #268bd2 !important;
+  }
+  body.dark-theme .gr_custom_each_container_ {
+    border-bottom-color: #586e75 !important;
+  }
+  body.dark-theme .gr_custom_title_ a {
+    color: #268bd2 !important;
+  }
+  body.dark-theme .gr_custom_author_ a {
+    color: #93a1a1 !important;
+  }
   .gr_custom_container_ {
     /* customize your Goodreads widget container here*/
     border: 1px solid gray;
@@ -244,7 +266,7 @@
     <div class="container">
         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
             <div class="col-md-4 d-flex align-items-center">
-                <span class="text-muted">©  G(E)X; All Rights Reserved!</span>
+                <span class="text-muted">© 2025 G(E)X; All Rights Reserved!</span>
             </div>
         </footer>
     </div>
