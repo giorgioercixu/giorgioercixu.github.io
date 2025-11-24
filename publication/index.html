@@ -58,6 +58,13 @@
     <div class="container">
         
 <div class="container my-4">
+    <!-- Conference Filter Section -->
+    <div id="conference-filter" class="mb-4 p-3 border rounded">
+        <div id="filter-buttons" class="d-flex flex-wrap gap-2">
+            <!-- Buttons will be dynamically added here -->
+        </div>
+    </div>
+
     <!-- Legend for author notations -->
     <p class="text-muted mb-4">
         <span class="co-first">*</span> Co-first author &nbsp;&nbsp;&nbsp;
@@ -74,6 +81,113 @@
             
             
             <h4 class="year-header mb-3">2026</h4>
+        
+        
+        <li class="mb-4">
+            <strong>All Along the Watchtower: Achieving the Trinity of Observability in Cloud with Quinn</strong>
+            
+            <br>
+            <span class="text-muted">by</span> 
+            
+                
+                
+                
+                
+                    Zhenyu Ren, 
+                
+            
+                
+                
+                
+                
+                    Shuzhi Feng, 
+                
+            
+                
+                
+                
+                    <span class="corresponding">#</span>
+                
+                
+                    <strong>Erci Xu </strong>, 
+                
+            
+                
+                
+                
+                
+                    Changsheng Niu, 
+                
+            
+                
+                
+                
+                
+                    Beibei Wang, 
+                
+            
+                
+                
+                
+                
+                    Haoyu Mao, 
+                
+            
+                
+                
+                
+                
+                    Chong Gao, 
+                
+            
+                
+                
+                
+                
+                    Zhenshan Zhang, 
+                
+            
+                
+                
+                
+                
+                    Xinrui Yu, 
+                
+            
+                
+                
+                
+                
+                    Jiangwei Huang, 
+                
+            
+                
+                
+                
+                
+                    Jiesheng Wu, 
+                
+            
+                
+                
+                
+                
+                    Hong Tang
+                
+            
+            <br>
+            <em>20th USENIX Symposium on Operating Systems Design and Implementation</em>, OSDI&#39;26 (CCF-A).
+            <br>
+            
+            
+            
+            
+            
+        </li>
+        
+    
+        
+        
         
         
         <li class="mb-4">
@@ -2643,7 +2757,209 @@ hr {
 body.dark-theme hr {
     background: linear-gradient(90deg, transparent, #586e75, transparent);
 }
+
+/* Conference filter styles */
+#conference-filter {
+    background: #eee8d5; /* Solarized base2 for light mode - darker tone */
+    border-color: #93a1a1 !important; /* Solarized base1 */
+}
+
+body.dark-theme #conference-filter {
+    background: #002b36; /* Solarized base03 for dark mode - darker tone */
+    border-color: #073642 !important; /* Solarized base02 */
+}
+
+.conf-filter-btn {
+    transition: all 0.2s ease;
+    border-width: 2px;
+    font-weight: 500;
+}
+
+.conf-filter-btn.active {
+    background-color: #268bd2 !important;
+    border-color: #268bd2 !important;
+    color: white !important;
+}
+
+.conf-filter-btn:not(.active) {
+    background-color: white;
+    border-color: #93a1a1;
+    color: #586e75;
+}
+
+body.dark-theme .conf-filter-btn:not(.active) {
+    background-color: #002b36;
+    border-color: #586e75;
+    color: #839496;
+}
+
+.conf-filter-btn:hover:not(.active) {
+    background-color: #eee8d5;
+    border-color: #268bd2;
+}
+
+body.dark-theme .conf-filter-btn:hover:not(.active) {
+    background-color: #073642;
+    border-color: #268bd2;
+}
+
+.publication-hidden {
+    display: none !important;
+}
 </style>
+
+<script>
+// Conference filter functionality
+let conferenceFilters = {};
+let conferenceCounts = {};
+
+function extractConferenceName(confString) {
+    // Extract base conference name from strings like "FAST'23 (CCF-A)"
+    const match = confString.match(/([A-Z][A-Za-z\-]*)'?\d*/);
+    return match ? match[1] : null;
+}
+
+function initializeConferenceFilter() {
+    // Count conferences from the publication list
+    const publications = document.querySelectorAll('.publication-list-global li');
+
+    publications.forEach((pub, index) => {
+        const confElement = pub.querySelector('em');
+        if (confElement) {
+            const confText = confElement.nextSibling ? confElement.nextSibling.textContent : '';
+            const confName = extractConferenceName(confText);
+
+            if (confName) {
+                // Store conference name with publication
+                pub.dataset.conference = confName;
+                pub.dataset.pubIndex = index;
+
+                // Count occurrences
+                if (!conferenceCounts[confName]) {
+                    conferenceCounts[confName] = 0;
+                    conferenceFilters[confName] = true; // All visible by default
+                }
+                conferenceCounts[confName]++;
+            }
+        }
+    });
+
+    // Sort conferences by count (descending)
+    const sortedConferences = Object.entries(conferenceCounts)
+        .sort((a, b) => b[1] - a[1]);
+
+    // Create filter buttons
+    const filterContainer = document.getElementById('filter-buttons');
+    filterContainer.innerHTML = '';
+
+    sortedConferences.forEach(([conf, count]) => {
+        const btn = document.createElement('button');
+        btn.className = 'btn btn-sm conf-filter-btn active';
+        btn.innerHTML = `${conf} × ${count}`;
+        btn.dataset.conference = conf;
+        btn.onclick = () => toggleConference(conf);
+        filterContainer.appendChild(btn);
+    });
+
+    // Add "Show All" button at the end
+    const showAllBtn = document.createElement('button');
+    showAllBtn.className = 'btn btn-sm btn-outline-primary';
+    showAllBtn.innerHTML = 'Show All';
+    showAllBtn.onclick = showAll;
+    filterContainer.appendChild(showAllBtn);
+
+    updatePublicationVisibility();
+}
+
+function toggleConference(conf) {
+    // Check if this conference is currently the only one active
+    const isOnlyActive = conferenceFilters[conf] === true &&
+        Object.keys(conferenceFilters).filter(c => c !== conf).every(c => conferenceFilters[c] === false);
+
+    if (isOnlyActive) {
+        // If it's the only one active, show all
+        showAll();
+    } else {
+        // Otherwise, show only this conference
+        Object.keys(conferenceFilters).forEach(c => {
+            conferenceFilters[c] = (c === conf);
+        });
+
+        // Update button states
+        document.querySelectorAll('.conf-filter-btn').forEach(btn => {
+            if (btn.dataset.conference === conf) {
+                btn.classList.add('active');
+            } else {
+                btn.classList.remove('active');
+            }
+        });
+
+        updatePublicationVisibility();
+    }
+}
+
+function showAll() {
+    Object.keys(conferenceFilters).forEach(conf => {
+        conferenceFilters[conf] = true;
+    });
+    document.querySelectorAll('.conf-filter-btn').forEach(btn => {
+        btn.classList.add('active');
+    });
+    updatePublicationVisibility();
+}
+
+
+function updatePublicationVisibility() {
+    const publications = document.querySelectorAll('.publication-list-global li');
+    let visibleCount = 0;
+
+    publications.forEach(pub => {
+        const conf = pub.dataset.conference;
+        if (conf && conferenceFilters[conf] === false) {
+            pub.classList.add('publication-hidden');
+        } else {
+            pub.classList.remove('publication-hidden');
+            visibleCount++;
+        }
+    });
+
+    // Update year headers visibility
+    const yearHeaders = document.querySelectorAll('.year-header');
+    yearHeaders.forEach(header => {
+        const nextElement = header.nextElementSibling;
+        let hasVisiblePubs = false;
+
+        if (nextElement && nextElement.tagName === 'OL') {
+            // Check if any publications under this year are visible
+            const sibling = header.parentElement;
+            if (sibling) {
+                const pubsInYear = [];
+                let current = header;
+                while (current && current.nextElementSibling) {
+                    current = current.nextElementSibling;
+                    if (current.tagName === 'LI' && !current.classList.contains('publication-hidden')) {
+                        hasVisiblePubs = true;
+                        break;
+                    }
+                    if (current.tagName === 'H4' || current.tagName === 'HR') {
+                        break;
+                    }
+                }
+            }
+        }
+
+        // Note: Year headers remain visible even if no pubs are shown
+        // You can uncomment the next line to hide empty year sections
+        // header.style.display = hasVisiblePubs ? 'block' : 'none';
+    });
+}
+
+// Initialize when page loads
+document.addEventListener('DOMContentLoaded', function() {
+    // Wait a bit for the publications to be fully rendered
+    setTimeout(initializeConferenceFilter, 100);
+});
+</script>
 
     </div>
 
